@@ -2,7 +2,7 @@
     "format_version": "1.8.0",
     "minecraft:client_entity": {
       "description": {
-        "identifier": "nomtom:tapiopon",
+        "identifier": "tapio:tapiopon",
         "materials": { "default": "tapiopon" },
         "textures": {
           "default": "textures/tapiopon/tapiopon"
@@ -12,8 +12,7 @@
         },
         "render_controllers": [ "controller.render.tapiopon" ],
         "spawn_egg": {
-          "base_color": "#e79595",
-          "overlay_color": "#ef2222"
+          "texture": "tapiopon_egg"
         }
       }
     }

@@ -1,0 +1,15 @@
+{
+    "entity_sounds": {
+        "entities": {
+          "tapio:tapiopon": {
+            "events" : {
+                "ambient" : "mob.tapiopon.cry",
+                "death" : "mob.tapiopon.death",
+                "hurt" : "mob.tapiopon.hit"
+             },
+             "pitch" : [ 0.80, 1.20 ],
+             "volume" : 1.0
+          }
+        }
+    }
+}
