@@ -1,0 +1,35 @@
+{
+    "format_version" : "1.14.0",
+    "sound_definitions": {
+        "mob.tapiopon.cry": {
+            "__use_legacy_max_distance" : "true",
+            "category" : "neutral",
+            "sounds": [ "sounds/tapiopon/cry" ]
+        },
+        "mob.tapiopon.death": {
+            "__use_legacy_max_distance" : "true",
+            "category" : "neutral",
+            "sounds": [ "sounds/tapiopon/death" ]
+        },
+        "mob.tapiopon.hit": {
+            "__use_legacy_max_distance" : "true",
+            "category" : "neutral",
+            "sounds": [ "sounds/tapiopon/cry" ]
+        },
+        "mob.black_tapiopon.cry": {
+            "__use_legacy_max_distance" : "true",
+            "category" : "neutral",
+            "sounds": [ "sounds/tapiopon/cry" ]
+        },
+        "mob.black_tapiopon.death": {
+            "__use_legacy_max_distance" : "true",
+            "category" : "neutral",
+            "sounds": [ "sounds/tapiopon/death" ]
+        },
+        "mob.black_tapiopon.hit": {
+            "__use_legacy_max_distance" : "true",
+            "category" : "neutral",
+            "sounds": [ "sounds/tapiopon/cry" ]
+        }
+    }
+}
