@@ -1,0 +1,11 @@
+{
+    "resource_pack_name" : "tapiopon",
+    "texture_data" : {
+        "tapiopon_egg": {
+            "textures" : "textures/tapiopon/item/tapiopon"
+        },
+        "black_tapiopon_egg": {
+            "textures" : "textures/tapiopon/item/black_tapiopon"
+        }
+    }
+}
