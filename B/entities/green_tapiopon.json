@@ -34,6 +34,9 @@
       "minecraft:type_family": {
         "family": [ "green_tapiopon", "mob" ]
       },
+      "minecraft:loot": {
+        "table": "loot_tables/tapio/tapiopon.json"
+      },
       "minecraft:breathable": {
         "total_supply": 15,
         "suffocate_time": 0
@@ -66,8 +69,8 @@
       "minecraft:can_climb": {
       },
       "minecraft:collision_box": {
-        "width": 0.9,
-        "height": 0.9
+        "width": 0.8,
+        "height": 0.8
       },
       "minecraft:attack": {
         "damage": 1
