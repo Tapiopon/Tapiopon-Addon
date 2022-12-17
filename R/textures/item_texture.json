@@ -7,6 +7,9 @@
         "black_tapiopon_egg": {
           "textures": "textures/tapiopon/item/black_tapiopon"
         },
+        "green_tapiopon_egg": {
+          "textures": "textures/tapiopon/item/green_tapiopon"
+        },
         "tapiopon_ball": {
           "textures": "textures/tapiopon/item/tapiopon_ball"
         }
