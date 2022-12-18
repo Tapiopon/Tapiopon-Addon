@@ -11,14 +11,14 @@
     {
       "type": "resources",
       "description": "res",
-      "version": [0, 2, 221],
+      "version": [0, 2, 225],
       "uuid": "b19d2917-4f53-4a57-97d6-7afb23b916b6"
     }
   ],
   "dependencies": [
     {
       "uuid": "85c1cf5d-fc26-492c-9e0f-5bac1f631c73",
-      "version": [0, 2, 221]
+      "version": [0, 2, 225]
     }
   ],
   "metadata": {
