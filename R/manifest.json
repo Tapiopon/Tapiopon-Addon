@@ -2,8 +2,8 @@
   "format_version": 2,
   "header": {
     "name": "Tapiopon Addon",
-    "description": "たぴおぽんのあどおんベータ！ R[0.2.141]",
-    "version": [0, 2, 141],
+    "description": "たぴおぽんのあどおんベータ！ R[0.2.225]",
+    "version": [0, 2, 225],
     "uuid": "d6e651d5-c87c-4cc9-8d56-e13e5354f7f4",
     "min_engine_version": [1, 19, 0]
   },
@@ -11,14 +11,18 @@
     {
       "type": "resources",
       "description": "res",
-      "version": [1, 0, 0],
+      "version": [0, 2, 221],
       "uuid": "b19d2917-4f53-4a57-97d6-7afb23b916b6"
     }
   ],
   "dependencies": [
     {
       "uuid": "85c1cf5d-fc26-492c-9e0f-5bac1f631c73",
-      "version": [0, 2, 141]
+      "version": [0, 2, 221]
     }
-  ]
+  ],
+  "metadata": {
+    "authors": ["Tapipon"],
+    "url": "https://github.com/Tapiopon/NomTom-Tapiopon-Addon"
+  }
 }

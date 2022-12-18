@@ -2,22 +2,26 @@
   "format_version": "1.16",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "tapio:tapiopon_ball"
+      "identifier": "tapio:tapiopon_light"
     },
     "tags": [
       "crafting_table"
     ],
     "pattern": [
-      "AA",
-      "AA"
+      "AAA",
+      "ABA",
+      "AAA"
     ],
     "key": {
       "A": {
-        "item": "minecraft:potato"
+        "item": "minecraft:glowstone_dust"
+      },
+      "B": {
+        "item": "tapio:tapiopon_ball"
       }
     },
     "result": {
-      "item": "tapio:tapiopon_ball",
+      "item": "tapio:tapiopon_light",
       "count": 1
     },
     "priority": 2

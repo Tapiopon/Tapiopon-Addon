@@ -1,35 +1,56 @@
 {
-    "entity_sounds": {
-        "entities": {
-          "tapio:tapiopon": {
-            "events" : {
-                "ambient" : "mob.tapiopon.cry",
-                "death" : "mob.tapiopon.death",
-                "hurt" : "mob.tapiopon.hit",
-                "angry": "mob.tapiopon.angry"
-             },
-             "pitch" : [ 0.80, 1.20 ],
-             "volume" : 1.0
-          },
-          "tapio:black_tapiopon": {
-            "events" : {
-                "ambient" : "mob.tapiopon.cry",
-                "death" : "mob.tapiopon.death",
-                "hurt" : "mob.tapiopon.hit",
-                "angry": "mob.tapiopon.angry"
-             },
-             "pitch" : [ 0.80, 1.20 ],
-             "volume" : 1.0
-          },
-          "tapio:green_tapiopon": {
-            "events" : {
-                "ambient" : "mob.tapiopon.cry",
-                "death" : "mob.tapiopon.death",
-                "hurt" : "mob.tapiopon.hit"
-             },
-             "pitch" : [ 0.80, 1.20 ],
-             "volume" : 1.0
-          }
+  "block_sounds": {
+    "tapio:tapiopon_light": {
+      "events": {
+        "break": {
+          "pitch" : [ 0.80, 1.0 ],
+          "sound" : "random.glass",
+          "volume" : 1.0
+        },
+        "default": "",
+        "item.use.on": {
+          "pitch" : 0.80,
+          "sound" : "use.stone"
+        },
+        "place" : {
+          "pitch": [ 0.80, 1.0 ],
+          "sound": "dig.stone",
+          "volume": 1.0
         }
+      }
     }
+  },
+  "entity_sounds": {
+    "entities": {
+      "tapio:tapiopon": {
+        "events": {
+          "ambient": "mob.tapiopon.cry",
+          "death": "mob.tapiopon.death",
+          "hurt": "mob.tapiopon.hit",
+          "angry": "mob.tapiopon.angry"
+        },
+        "pitch": [0.80, 1.20],
+        "volume": 1.0
+      },
+      "tapio:black_tapiopon": {
+        "events": {
+          "ambient": "mob.tapiopon.cry",
+          "death": "mob.tapiopon.death",
+          "hurt": "mob.tapiopon.hit",
+          "angry": "mob.tapiopon.angry"
+        },
+        "pitch": [0.80, 1.20],
+        "volume": 1.0
+      },
+      "tapio:green_tapiopon": {
+        "events": {
+          "ambient": "mob.tapiopon.cry",
+          "death": "mob.tapiopon.death",
+          "hurt": "mob.tapiopon.hit"
+        },
+        "pitch": [0.80, 1.20],
+        "volume": 1.0
+      }
+    }
+  }
 }
