@@ -5,3 +5,4 @@ item.spawn_egg.entity.tapio:black_tapiopon.name=真っ黒たぴおぽんのス�
 entity.tapio:green_tapiopon.name=緑たぴおぽん
 item.spawn_egg.entity.tapio:green_tapiopon.name=緑たぴおぽんのスポーンエッグ
 item.tapio:tapiopon_ball=たぴおぽんの素材
+tile.tapio:tapiopon_light.name=たぴおぽんライト
