@@ -10,6 +10,9 @@
         "green_tapiopon_egg": {
           "textures": "textures/tapiopon/item/green_tapiopon"
         },
+        "tapiopon_sleep_object": {
+          "textures": "textures/tapiopon/item/tapiopon_sleep_object"
+        },
         "tapiopon_ball": {
           "textures": "textures/tapiopon/item/tapiopon_ball"
         }

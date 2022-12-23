@@ -85,6 +85,9 @@
           "duration": 10,
           "broadcast_anger": true,
           "broadcast_range": 20,
+          "broadcast_targets": [
+            "black_tapiopon"
+          ],
           "calm_event": {
             "event": "minecraft:on_calm",
             "target": "self"
@@ -99,7 +102,7 @@
         "family": ["mob","black_tapiopon"]
       },
       "minecraft:loot": {
-        "table": "loot_tables/tapio/tapiopon.json"
+        "table": "loot_tables/tapio/entity/tapiopon.json"
       },
       "minecraft:breathable": {
         "total_supply": 15,
@@ -121,7 +124,7 @@
         ]
       },
       "minecraft:movement": {
-        "value": 0.80
+        "value": 0.50
       },
       "minecraft:navigation.walk": {
         "can_path_over_water": true,

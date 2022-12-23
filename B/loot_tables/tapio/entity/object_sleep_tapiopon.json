@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "tapio:object_sleep_tapiopon_spawn_egg",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

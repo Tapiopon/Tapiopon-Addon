@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "tapio:tapiopon_sleep_object",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
