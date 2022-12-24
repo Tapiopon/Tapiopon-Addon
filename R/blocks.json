@@ -1,0 +1,20 @@
+{
+  "format_version": "1.19.30",
+  "tapio:tapiopon_light": {
+    "textures": {
+      "up": "tapiopon_light_top",
+      "down": "tapiopon_light_top",
+      "north": "tapiopon_light",
+      "south": "tapiopon_light",
+      "east": "tapiopon_light",
+      "west": "tapiopon_light"
+    },
+    "carried_textures": "tapiopon_light",
+    "isotropic": false,
+    "brightness_gamma": 1,
+    "sound": "glass"
+  },
+  "tapio:tapiopon_sleep_object": {
+    "sound": "wool"
+  }
+}
