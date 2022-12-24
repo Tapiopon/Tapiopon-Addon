@@ -1,0 +1,19 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "tapio:object_sleep_tapiopon",
+        "materials": { "default": "tapiopon" },
+        "textures": {
+          "default": "textures/tapiopon/entity/tapiopon_sleep"
+        },
+        "geometry": {
+          "default": "geometry.object_sleep_tapiopon"
+        },
+        "render_controllers": [ "controller.render.tapiopon" ],
+        "spawn_egg": {
+          "texture": "tapiopon_sleep_object"
+        }
+      }
+    }
+  }

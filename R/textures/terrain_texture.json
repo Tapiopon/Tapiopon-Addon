@@ -1,0 +1,14 @@
+{
+  "resource_pack_name": "tapiopon",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "tapiopon_light": {
+      "textures": "textures/tapiopon/blocks/tapiopon_light"
+    },
+    "tapiopon_light_top": {
+      "textures": "textures/tapiopon/blocks/tapiopon_light_top"
+    }
+  }
+}

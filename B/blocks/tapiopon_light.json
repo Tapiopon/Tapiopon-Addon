@@ -1,0 +1,56 @@
+{
+  "format_version": "1.19.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "tapio:tapiopon_light",
+      "properties": {
+        "tapio:is_light": [false, true]
+      }
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/tapio/blocks/tapiopon_light_loot.json",
+      "minecraft:map_color": "#ffffff",
+      "minecraft:light_dampening": 15,
+      "minecraft:selection_box": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 10.0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0
+      },
+      "minecraft:friction": 0.4
+    },
+    "events": {
+      "tapio:light_off": {
+        "set_block_property": {
+          "tapio:is_light": "false"
+        }
+      },
+      "tapio:light_on": {
+        "set_block_property": {
+          "tapio:is_light": "true"
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_property('tapio:is_light') == false",
+        "components": {
+          "minecraft:light_emission": 0,
+          "minecraft:on_interact": {
+            "event": "tapio:light_on"
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('tapio:is_light') == true",
+        "components": {
+          "minecraft:light_emission": 15,
+          "minecraft:on_interact": {
+            "event": "tapio:light_off"
+          }
+        }
+      }
+    ]
+  }
+}

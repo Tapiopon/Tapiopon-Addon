@@ -1,0 +1,42 @@
+{
+  "entity_sounds": {
+    "entities": {
+      "tapio:tapiopon": {
+        "events": {
+          "ambient": "mob.tapiopon.cry",
+          "death": "mob.tapiopon.death",
+          "hurt": "mob.tapiopon.hit",
+          "angry": "mob.tapiopon.angry"
+        },
+        "pitch": [0.80, 1.20],
+        "volume": 1.0
+      },
+      "tapio:black_tapiopon": {
+        "events": {
+          "ambient": "mob.tapiopon.cry",
+          "death": "mob.tapiopon.death",
+          "hurt": "mob.tapiopon.hit",
+          "angry": "mob.tapiopon.angry"
+        },
+        "pitch": [0.80, 1.20],
+        "volume": 1.0
+      },
+      "tapio:green_tapiopon": {
+        "events": {
+          "ambient": "mob.tapiopon.cry",
+          "death": "mob.tapiopon.death",
+          "hurt": "mob.tapiopon.hit"
+        },
+        "pitch": [0.80, 1.20],
+        "volume": 1.0
+      },
+      "tapio:object_sleep_tapiopon": {
+        "events": {
+          "death": "mob.tapiopon.cry"
+        },
+        "pitch": [0.80, 1.20],
+        "volume": 1.0
+      }
+    }
+  }
+}
