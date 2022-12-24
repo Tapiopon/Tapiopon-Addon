@@ -36,6 +36,16 @@
         },
         "pitch": [0.80, 1.20],
         "volume": 1.0
+      },
+      "tapio:christmas_tapiopon": {
+        "events": {
+          "ambient": "mob.tapiopon.cry",
+          "death": "mob.tapiopon.death",
+          "hurt": "mob.tapiopon.hit",
+          "angry": "mob.tapiopon.angry"
+        },
+        "pitch": [0.90, 1.40],
+        "volume": 1.0
       }
     }
   }
