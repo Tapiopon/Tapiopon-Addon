@@ -13,6 +13,9 @@
         "tapiopon_sleep_object": {
           "textures": "textures/tapiopon/item/tapiopon_sleep_object"
         },
+        "boss_purple_tapiopon": {
+          "textures": "textures/tapiopon/item/boss_purple_tapiopon"
+        },
         "tapiopon_ball": {
           "textures": "textures/tapiopon/item/tapiopon_ball"
         }

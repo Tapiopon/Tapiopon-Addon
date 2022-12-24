@@ -1,0 +1,19 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "tapio:boss_purple_tapiopon",
+        "materials": { "default": "tapiopon" },
+        "textures": {
+          "default": "textures/tapiopon/entity/boss_purple_tapiopon"
+        },
+        "geometry": {
+          "default": "geometry.boss_purple_tapiopon"
+        },
+        "render_controllers": [ "controller.render.boss_purple_tapiopon" ],
+        "spawn_egg": {
+          "texture": "boss_purple_tapiopon"
+        }
+      }
+    }
+  }
