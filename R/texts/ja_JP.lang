@@ -10,3 +10,5 @@ entity.tapio:object_sleep_tapiopon.name=たぴおぽんのオブジェクト
 item.spawn_egg.entity.tapio:object_sleep_tapiopon.name=たぴおぽんのオブジェクト
 entity.tapio:boss_purple_tapiopon.name=紫たぴおぽん
 item.spawn_egg.entity.tapio:boss_purple_tapiopon.name=紫たぴおぽんのスポーンエッグ
+entity.tapio:cannon_tapiopon.name=キャノンたぴおぽん
+item.spawn_egg.entity.tapio:cannon_tapiopon.name=キャノンたぴおぽんのスポーンエッグ

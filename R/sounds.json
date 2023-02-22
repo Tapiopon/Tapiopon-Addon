@@ -46,6 +46,16 @@
         },
         "pitch": [0.90, 1.40],
         "volume": 1.0
+      },
+      "tapio:cannon_tapiopon": {
+        "events": {
+          "ambient": "mob.tapiopon.cry",
+          "death": "mob.tapiopon.death",
+          "hurt": "mob.tapiopon.hit",
+          "angry": "mob.tapiopon.angry"
+        },
+        "pitch": [0.70, 1.10],
+        "volume": 1.2
       }
     }
   }
