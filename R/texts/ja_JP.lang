@@ -1,5 +1,5 @@
-entity.tapio:tapiopon.name=たぴおぽん
-item.spawn_egg.entity.tapio:tapiopon.name=たぴおぽんのスポーンエッグ
+entity.tapio:white_tapiopon.name=たぴおぽん
+item.spawn_egg.entity.tapio:white_tapiopon.name=たぴおぽんのスポーンエッグ
 entity.tapio:black_tapiopon.name=真っ黒たぴおぽん
 item.spawn_egg.entity.tapio:black_tapiopon.name=真っ黒たぴおぽんのスポーンエッグ
 entity.tapio:green_tapiopon.name=緑たぴおぽん

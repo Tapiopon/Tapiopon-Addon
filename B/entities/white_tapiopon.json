@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "tapio:tapiopon",
+      "identifier": "tapio:white_tapiopon",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -86,7 +86,7 @@
           "broadcast_anger": true,
           "broadcast_range": 20,
           "broadcast_targets": [
-            "tapiopon"
+            "white_tapiopon"
           ],
           "calm_event": {
             "event": "minecraft:on_calm",
@@ -99,7 +99,7 @@
       "minecraft:is_hidden_when_invisible": {
       },
       "minecraft:type_family": {
-        "family": ["mob","tapiopon"]
+        "family": ["mob","tapiopon","white_tapiopon"]
       },
       "minecraft:loot": {
         "table": "loot_tables/tapio/entity/tapiopon.json"

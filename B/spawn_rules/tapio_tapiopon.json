@@ -2,7 +2,7 @@
   "format_version": "1.8.0",
   "minecraft:spawn_rules": {
     "description": {
-      "identifier": "tapio:tapiopon",
+      "identifier": "tapio:white_tapiopon",
       "population_control": "animal"
     },
     "conditions": [

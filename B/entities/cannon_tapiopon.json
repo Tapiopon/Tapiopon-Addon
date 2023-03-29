@@ -84,7 +84,7 @@
       "minecraft:is_hidden_when_invisible": {
       },
       "minecraft:type_family": {
-        "family": ["mob","cannon_tapiopon"]
+        "family": ["mob","tapiopon","cannon_tapiopon"]
       },
       "minecraft:loot": {
         "table": "loot_tables/tapio/entity/tapiopon.json"
