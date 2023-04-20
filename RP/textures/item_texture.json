@@ -1,0 +1,23 @@
+{
+    "resource_pack_name" : "tapiopon",
+    "texture_data" : {
+        "white_tapiopon_egg": {
+          "textures": "textures/tapiopon/item/white_tapiopon_egg"
+        },
+        "black_tapiopon_egg": {
+          "textures": "textures/tapiopon/item/black_tapiopon_egg"
+        },
+        "green_tapiopon_egg": {
+          "textures": "textures/tapiopon/item/green_tapiopon_egg"
+        },
+        "water_tapiopon_egg": {
+          "textures": "textures/tapiopon/item/water_tapiopon_egg"
+        },
+        "tapiopon_sleep_object": {
+          "textures": "textures/tapiopon/item/tapiopon_sleep_object"
+        },
+        "tapiopon_ball": {
+          "textures": "textures/tapiopon/item/tapiopon_ball"
+        }
+    }
+}

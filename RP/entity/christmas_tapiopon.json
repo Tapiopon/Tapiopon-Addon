@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tapio:christmas_tapiopon",
+      "materials": { "default": "tapiopon" },
+      "textures": {
+        "default": "textures/tapiopon/entity/christmas_tapiopon"
+      },
+      "geometry": {
+        "default": "geometry.christmas_tapiopon"
+      },
+      "render_controllers": ["controller.render.tapiopon"],
+      "spawn_egg": {
+        "texture": "white_tapiopon_egg"
+      },
+      "scripts": {
+        "animate": [
+            "setup",
+          {
+            "walk": "query.modified_move_speed"
+            },
+            "look_at_target"
+          ]
+      },
+      "animations": {
+        "setup": "animation.tapiopon.setup",
+        "walk": "animation.tapiopon.walk",
+        "look_at_target": "animation.common.look_at_target"
+      }
+    }
+  }
+}
