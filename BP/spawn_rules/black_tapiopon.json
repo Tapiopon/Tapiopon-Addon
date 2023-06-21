@@ -2,7 +2,7 @@
   "format_version": "1.8.0",
   "minecraft:spawn_rules": {
     "description": {
-      "identifier": "tapio:white_tapiopon",
+      "identifier": "tapio:black_tapiopon",
       "population_control": "animal"
     },
     "conditions": [
@@ -10,12 +10,12 @@
         "minecraft:spawns_on_surface": {},
         "minecraft:spawns_on_block_filter": "minecraft:grass",
         "minecraft:brightness_filter": {
-          "min": 7,
-          "max": 15,
+          "min": 0,
+          "max": 6,
           "adjust_for_weather": false
         },
         "minecraft:weight": {
-          "default": 6
+          "default": 7
         },
         "minecraft:herd": {
           "min_size":1,
