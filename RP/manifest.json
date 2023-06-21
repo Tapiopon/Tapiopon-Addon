@@ -2,8 +2,8 @@
   "format_version": 2,
   "header": {
     "name": "Tapiopon Addon",
-    "description": "たぴおぽんのあどおん！ R[0.4.0]",
-    "version": [0, 4, 0],
+    "description": "たぴおぽんのあどおんベータ！ R[0.4.3]",
+    "version": [0, 4, 3],
     "uuid": "d6e651d5-c87c-4cc9-8d56-e13e5354f7f4",
     "min_engine_version": [1, 19, 30]
   },
@@ -19,3 +19,4 @@
     "authors": ["Tapipon"],
     "url": "https://github.com/Tapiopon/Tapiopon-Addon"
   }
+}

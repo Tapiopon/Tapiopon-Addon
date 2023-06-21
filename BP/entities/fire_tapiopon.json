@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "tapio:water_tapiopon",
+      "identifier": "tapio:fire_tapiopon",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -22,7 +22,7 @@
               "filters":{
                 "test": "is_family",
                 "subject": "other",
-                "value": "fire_tapiopon"
+                "value": "water_tapiopon"
               }
             }
           ]
@@ -86,7 +86,7 @@
           "broadcast_anger": true,
           "broadcast_range": 20,
           "broadcast_targets": [
-            "water_tapiopon"
+            "fire_tapiopon"
           ],
           "calm_event": {
             "event": "minecraft:on_calm",
@@ -99,7 +99,7 @@
       "minecraft:is_hidden_when_invisible": {
       },
       "minecraft:type_family": {
-        "family": ["mob","tapiopon","water_tapiopon"]
+        "family": ["mob","tapiopon","fire_tapiopon"]
       },
       "minecraft:loot": {
         "table": "loot_tables/tapio/entity/tapiopon.json"
@@ -107,23 +107,20 @@
       "minecraft:nameable": {
       },
       "minecraft:health": {
-        "value": 30,
-        "max": 30
+        "value": 24,
+        "max": 24
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
-            "cause": "lava",
-            "damage_per_tick": 4
+            "filters": { "test": "in_water", "subject": "self", "operator": "==", "value": true },
+            "cause": "drowning",
+            "damage_per_tick": 2
           }
         ]
       },
       "minecraft:movement": {
         "value": 0.25
-      },
-      "minecraft:underwater_movement": {
-        "value": 0.12
       },
       "minecraft:breathable": {
         "total_supply": 15,
@@ -150,7 +147,7 @@
         "height": 0.8
       },
       "minecraft:attack": {
-        "damage": 1
+        "damage": 6
       },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -159,11 +156,6 @@
       },
       "minecraft:despawn": {
         "despawn_from_distance": {}
-      },
-      "minecraft:behavior.random_swim": {
-        "priority": 5,
-        "interval": 0,
-        "xz_dist": 20
       },
       "minecraft:physics": {
       },

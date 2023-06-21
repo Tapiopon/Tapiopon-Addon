@@ -16,3 +16,5 @@ entity.tapio:christmas_tapiopon.name=クリスマスたぴおぽん
 item.spawn_egg.entity.tapio:christmas_tapiopon.name=クリスマスたぴおぽんのスポーンエッグ
 entity.tapio:water_tapiopon.name=水たぴおぽん
 item.spawn_egg.entity.tapio:water_tapiopon.name=水たぴおぽんのスポーンエッグ
+entity.tapio:fire_tapiopon.name=炎たぴおぽん
+item.spawn_egg.entity.tapio:fire_tapiopon.name=炎たぴおぽんのスポーンエッグ
