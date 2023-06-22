@@ -119,6 +119,8 @@
           }
         ]
       },
+      "minecraft:fire_immune":{
+      },
       "minecraft:movement": {
         "value": 0.25
       },
