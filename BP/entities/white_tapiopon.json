@@ -12,14 +12,14 @@
         "minecraft:behavior.hurt_by_target": {
           "priority": 1
         },
-        "minecraft:behavior.nearest_attackable_target":{
+        "minecraft:behavior.nearest_attackable_target": {
           "priority": 2,
-          "must_see":true,
+          "must_see": true,
           "reselect_targets": true,
           "within_radius": 25.0,
-          "entity_types":[
+          "entity_types": [
             {
-              "filters":{
+              "filters": {
                 "test": "is_family",
                 "subject": "other",
                 "value": "black_tapiopon"
@@ -29,8 +29,7 @@
         }
       },
       "tapio:tapiopon_tame": {
-        "minecraft:is_tamed": {
-        },
+        "minecraft:is_tamed": {},
         "minecraft:health": {
           "value": 40,
           "max": 40
@@ -61,8 +60,7 @@
         "minecraft:behavior.owner_hurt_target": {
           "priority": 2
         },
-        "minecraft:sittable": {
-        }
+        "minecraft:sittable": {}
       },
       "tapio:tapiopon_calm": {
         "minecraft:tameable": {
@@ -96,10 +94,9 @@
       }
     },
     "components": {
-      "minecraft:is_hidden_when_invisible": {
-      },
+      "minecraft:is_hidden_when_invisible": {},
       "minecraft:type_family": {
-        "family": ["mob","tapiopon","white_tapiopon"]
+        "family": ["mob", "tapiopon", "white_tapiopon"]
       },
       "minecraft:loot": {
         "table": "loot_tables/tapio/entity/tapiopon.json"
@@ -108,8 +105,7 @@
         "total_supply": 15,
         "suffocate_time": 0
       },
-      "minecraft:nameable": {
-      },
+      "minecraft:nameable": {},
       "minecraft:health": {
         "value": 30,
         "max": 30
@@ -131,15 +127,12 @@
         "avoid_water": true,
         "avoid_damage_blocks": true
       },
-      "minecraft:movement.basic": {
-      },
-      "minecraft:jump.static": {
-      },
-      "minecraft:can_climb": {
-      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
       "minecraft:collision_box": {
-        "width": 0.8,
-        "height": 0.8
+        "width": 0.6,
+        "height": 0.6
       },
       "minecraft:attack": {
         "damage": 1
@@ -152,14 +145,12 @@
       "minecraft:despawn": {
         "despawn_from_distance": {}
       },
-      "minecraft:physics": {
-      },
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
       },
-      "minecraft:conditional_bandwidth_optimization": {
-      },
+      "minecraft:conditional_bandwidth_optimization": {},
       "minecraft:behavior.float": {
         "priority": 0
       },

@@ -20,13 +20,17 @@
             {
               "walk": "query.modified_move_speed"
             },
-            "look_at_target"
+            "look_at_target",
+            {
+              "sit": "query.is_sitting"
+            }
           ]
         },
         "animations": {
           "setup": "animation.tapiopon.setup",
           "walk": "animation.tapiopon.walk",
-          "look_at_target": "animation.common.look_at_target"
+          "look_at_target": "animation.common.look_at_target",
+          "sit": "animation.tapiopon.sit"
         }
       }
     }

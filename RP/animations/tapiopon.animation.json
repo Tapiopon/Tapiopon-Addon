@@ -26,6 +26,33 @@
 					"rotation" : [ "math.cos(query.anim_time * 38.17) *  40.0", 0.0, 0.0 ]
 				}
 			}
+		},
+		"animation.tapiopon.sit" : {
+			"loop" : true,
+			"bones" : {
+			  "head": {
+			    "position": [ 0, -2.2, 0 ]
+			  },
+			  "body": {
+			    "position": [ 0, -2.2, 0 ]
+			  },
+				"leftArm" : {
+				  "position": [ 0, -1.2, 0 ],
+					"rotation" : [ 90, 0, 0 ]
+				},
+				"rightArm" : {
+				  "position": [ 0, -1.2, 0 ],
+					"rotation" : [ 90, 0, 0 ]
+				},
+				"leftLeg" : {
+				  "position": [ 0, -2.2, 0 ],
+					"rotation" : [ -90, 0, 0 ]
+				},
+				"rightLeg" : {
+				  "position": [ 0, -2.2, 0 ],
+					"rotation" : [ -90, 0, 0 ]
+				}
+			}
 		}
 	}
 }

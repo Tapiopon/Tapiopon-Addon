@@ -9,6 +9,12 @@
     },
     "tapiopon_light_top": {
       "textures": "textures/tapiopon/blocks/tapiopon_light_top"
+    },
+    "tapiopon_desk": {
+      "textures": "textures/tapiopon/blocks/tapiopon_desk"
+    },
+    "tapiopon_crafting_table": {
+      "textures": "textures/tapiopon/blocks/tapiopon_crafting_table"
     }
   }
 }

@@ -1,0 +1,23 @@
+{
+  "format_version": "1.19.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "tapio:tapiopon_desk"
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/tapio/blocks/tapiopon_light_loot.json",
+      "minecraft:map_color": "#ffffff",
+      "minecraft:geometry": "geometry.tapiopon_desk",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "tapiopon_desk",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:selection_box": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 10.0
+      }
+    }
+  }
+}

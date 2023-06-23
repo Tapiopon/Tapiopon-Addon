@@ -21,6 +21,9 @@
         },
         "tapiopon_ball": {
           "textures": "textures/tapiopon/item/tapiopon_ball"
+        },
+        "tapiopon_ingot": {
+          "textures": "textures/tapiopon/item/tapiopon_ingot"
         }
     }
 }
