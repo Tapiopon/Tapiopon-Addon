@@ -75,8 +75,8 @@
       "minecraft:can_climb": {
       },
       "minecraft:collision_box": {
-        "width": 0.8,
-        "height": 0.8
+        "width": 0.6,
+        "height": 0.6
       },
       "minecraft:attack": {
         "damage": 1
@@ -131,6 +131,21 @@
         "priority": 6,
         "look_distance": 4
       },
+      "minecraft:behavior.avoid_mob_type": {
+          "priority": 6,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              "max_dist": 10,
+              "walk_speed_multiplier": 0.8,
+              "sprint_speed_multiplier": 1.33
+            }
+          ]
+        },
       "minecraft:behavior.hurt_by_target": {
         "priority": 1
       },
