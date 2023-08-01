@@ -18,3 +18,6 @@ entity.tapio:water_tapiopon.name=水たぴおぽん
 item.spawn_egg.entity.tapio:water_tapiopon.name=水たぴおぽんのスポーンエッグ
 entity.tapio:fire_tapiopon.name=炎たぴおぽん
 item.spawn_egg.entity.tapio:fire_tapiopon.name=炎たぴおぽんのスポーンエッグ
+tile.tapio:tapiopon_crafting_table.name=たぴおぽんの作業台
+tile.tapio:tapiopon_desk.name=たぴおぽんのデスク
+tile.tapio:tapiopon_light.name=たぴおぽんのライト
