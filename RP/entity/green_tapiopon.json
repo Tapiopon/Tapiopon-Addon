@@ -20,7 +20,10 @@
             {
               "walk": "query.modified_move_speed"
             },
-            "look_at_target"
+            "look_at_target",
+            {
+              "sit": "query.is_sitting"
+            }
           ]
         },
         "animations": {

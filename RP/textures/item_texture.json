@@ -17,7 +17,7 @@
           "textures": "textures/tapiopon/item/fire_tapiopon_egg"
         },
         "ender_tapiopon_egg": {
-          "textures": "textures/tapiopon/item/fire_tapiopon_egg"
+          "textures": "textures/tapiopon/item/ender_tapiopon_egg"
         },
         "tapiopon_sleep_object": {
           "textures": "textures/tapiopon/item/tapiopon_sleep_object"
