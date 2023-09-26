@@ -31,26 +31,26 @@
 			"loop" : true,
 			"bones" : {
 			  "head": {
-			    "position": [ 0, -2.2, 0 ]
+			    "position": [ 0, -2.0, 0 ]
 			  },
 			  "body": {
-			    "position": [ 0, -2.2, 0 ]
+			    "position": [ 0, -2.0, 0 ]
 			  },
 				"leftArm" : {
-				  "position": [ 0, -1.2, 0 ],
-					"rotation" : [ 90, 0, 0 ]
+				  "position": [ 0, -1.2, 0.2 ],
+					"rotation" : [ -90, 0, 0 ]
 				},
 				"rightArm" : {
-				  "position": [ 0, -1.2, 0 ],
-					"rotation" : [ 90, 0, 0 ]
+				  "position": [ 0, -1.2, 0.2 ],
+					"rotation" : [ -90, 0, 0 ]
 				},
 				"leftLeg" : {
-				  "position": [ 0, -2.2, 0 ],
-					"rotation" : [ -90, 0, 0 ]
+				  "position": [ 0, -2.6, -0.2 ],
+					"rotation" : [ 90, 0, 0 ]
 				},
 				"rightLeg" : {
-				  "position": [ 0, -2.2, 0 ],
-					"rotation" : [ -90, 0, 0 ]
+				  "position": [ 0, -2.6, -0.2 ],
+					"rotation" : [ 90, 0, 0 ]
 				}
 			}
 		}
