@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "tapio:white_tapiopon",
+      "identifier": "tapio:ender_tapiopon",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -11,28 +11,13 @@
       "tapio:tapiopon_wild": {
         "minecraft:behavior.hurt_by_target": {
           "priority": 1
-        },
-        "minecraft:behavior.nearest_attackable_target": {
-          "priority": 2,
-          "must_see": true,
-          "reselect_targets": true,
-          "within_radius": 25.0,
-          "entity_types": [
-            {
-              "filters": {
-                "test": "is_family",
-                "subject": "other",
-                "value": "black_tapiopon"
-              }
-            }
-          ]
         }
       },
       "tapio:tapiopon_tame": {
         "minecraft:is_tamed": {},
         "minecraft:health": {
-          "value": 40,
-          "max": 40
+          "value": 24,
+          "max": 24
         },
         "minecraft:behavior.hurt_by_target": {
           "priority": 1,
@@ -52,7 +37,7 @@
           "stop_distance": 2
         },
         "minecraft:attack": {
-          "damage": 2
+          "damage": 4
         },
         "minecraft:behavior.owner_hurt_by_target": {
           "priority": 1
@@ -84,7 +69,7 @@
           "broadcast_anger": true,
           "broadcast_range": 20,
           "broadcast_targets": [
-            "white_tapiopon"
+            "ender_tapiopon"
           ],
           "calm_event": {
             "event": "minecraft:on_calm",
@@ -96,7 +81,7 @@
     "components": {
       "minecraft:is_hidden_when_invisible": {},
       "minecraft:type_family": {
-        "family": ["mob", "tapiopon", "white_tapiopon"]
+        "family": ["mob", "tapiopon", "ender_tapiopon"]
       },
       "minecraft:loot": {
         "table": "loot_tables/tapio/entity/tapiopon.json"
@@ -107,8 +92,8 @@
       },
       "minecraft:nameable": {},
       "minecraft:health": {
-        "value": 30,
-        "max": 30
+        "value": 48,
+        "max": 48
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -116,16 +101,28 @@
             "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
             "cause": "lava",
             "damage_per_tick": 4
+          },
+          {
+            "filters": { "test": "in_contact_with_water", "operator": "==", "value": true },
+            "cause": "drowning",
+            "damage_per_tick": 1
           }
         ]
       },
       "minecraft:movement": {
-        "value": 0.25
+        "value": 0.35
+      },
+      "minecraft:teleport": {
+        "random_teleports": true,
+        "max_random_teleport_time": 30,
+        "random_teleport_cube": [64, 32, 64],
+        "target_distance": 16,
+        "target_teleport_chance": 0.05,
+        "light_teleport_chance": 0.05
       },
       "minecraft:navigation.walk": {
-        "can_path_over_water": true,
-        "avoid_water": true,
-        "avoid_damage_blocks": true
+        "can_path_over_water": false,
+        "avoid_water": true
       },
       "minecraft:movement.basic": {},
       "minecraft:jump.static": {},
@@ -138,7 +135,7 @@
         "value": 1.4
       },
       "minecraft:attack": {
-        "damage": 1
+        "damage": 8
       },
       "minecraft:leashable": {
         "soft_distance": 4.0,

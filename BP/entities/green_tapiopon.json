@@ -8,37 +8,80 @@
       "is_experimental": false
     },
     "component_groups": {
-      "minecraft:exploding": {
-        "minecraft:movement": {
-          "value": 0
-        },
-        "minecraft:explode": {
-          "fuse_length": 1.5,
-          "fuse_lit": true,
-          "power": 12,
-          "causes_fire": true,
-          "destroy_affected_by_griefing": true
+      "tapio:tapiopon_wild": {
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 1
         }
       },
-      "minecraft:charged_exploding": {
-        "minecraft:movement": {
-          "value": 0
+      "tapio:tapiopon_tame": {
+        "minecraft:is_tamed": {},
+        "minecraft:health": {
+          "value": 15,
+          "max": 15
         },
-        "minecraft:explode": {
-          "fuse_length": 1.5,
-          "fuse_lit": true,
-          "power": 18,
-          "causes_fire": true,
-          "destroy_affected_by_griefing": true
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 1,
+          "entity_types": {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "operator": "!=",
+              "value": "player"
+            }
+          }
+        },
+        "minecraft:behavior.follow_owner": {
+          "priority": 6,
+          "speed_multiplier": 1.0,
+          "start_distance": 10,
+          "stop_distance": 2
+        },
+        "minecraft:attack": {
+          "damage": 3
+        },
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 2
+        },
+        "minecraft:sittable": {}
+      },
+      "tapio:tapiopon_calm": {
+        "minecraft:tameable": {
+          "probability": 0.1,
+          "tame_items": "tapio:tapiopon_ball",
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        },
+        "minecraft:on_target_acquired": {
+          "event": "minecraft:become_angry",
+          "target": "self"
+        }
+      },
+      "tapio:tapiopon_angry": {
+        "minecraft:angry": {
+          "angry_sound": "angry",
+          "sound_interval": 10,
+          "duration": 10,
+          "broadcast_anger": true,
+          "broadcast_range": 20,
+          "broadcast_targets": [
+            "white_tapiopon"
+          ],
+          "calm_event": {
+            "event": "minecraft:on_calm",
+            "target": "self"
+          }
         }
       }
     },
-    
     "components": {
-      "minecraft:is_hidden_when_invisible": {
-      },
+      "minecraft:is_hidden_when_invisible": {},
       "minecraft:type_family": {
-        "family": ["green_tapiopon","mob","tapiopon"]
+        "family": ["mob", "tapiopon", "green_tapiopon"]
       },
       "minecraft:loot": {
         "table": "loot_tables/tapio/entity/tapiopon.json"
@@ -47,11 +90,14 @@
         "total_supply": 15,
         "suffocate_time": 0
       },
-      "minecraft:nameable": {
-      },
+      "minecraft:nameable": {},
       "minecraft:health": {
-        "value": 14,
-        "max": 14
+        "value": 30,
+        "max": 30
+      },
+      "minecraft:grows_crop":{
+        "chance": 0.5,
+        "charges": 50
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -63,20 +109,22 @@
         ]
       },
       "minecraft:movement": {
-        "value": 0.2
+        "value": 0.25
       },
       "minecraft:navigation.walk": {
-        "can_path_over_water": true
+        "can_path_over_water": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
       },
-      "minecraft:movement.basic": {
-      },
-      "minecraft:jump.static": {
-      },
-      "minecraft:can_climb": {
-      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
       "minecraft:collision_box": {
-        "width": 0.6,
-        "height": 0.6
+        "width": 0.65,
+        "height": 0.65
+      },
+      "minecraft:scale": {
+        "value": 1.4
       },
       "minecraft:attack": {
         "damage": 1
@@ -89,103 +137,80 @@
       "minecraft:despawn": {
         "despawn_from_distance": {}
       },
-      "minecraft:physics": {
-      },
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
       },
-      "minecraft:conditional_bandwidth_optimization": {
-      },
-      "minecraft:target_nearby_sensor": {
-        "inside_range": 2.5,
-        "outside_range": 3.0,
-        "must_see": true,
-        "on_inside_range": {
-          "event": "minecraft:start_exploding",
-          "target": "self"
-        },
-        "on_outside_range": {
-          "event": "minecraft:stop_exploding",
-          "target": "self"
-        },
-        "on_vision_lost_inside_range": {
-          "event": "minecraft:stop_exploding",
-          "target": "self"
-        }
-      },
+      "minecraft:conditional_bandwidth_optimization": {},
       "minecraft:behavior.float": {
         "priority": 0
       },
-      "minecraft:behavior.melee_attack": {
-        "priority": 4,
+      "minecraft:behavior.mount_pathing": {
+        "priority": 1,
         "speed_multiplier": 1.25,
-        "track_target": false,
-        "reach_multiplier":  0.0
+        "target_dist": 0.0,
+        "track_target": true
+      },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 3
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 3
       },
       "minecraft:behavior.random_stroll": {
-        "priority": 5,
-        "speed_multiplier": 1
+        "priority": 3,
+        "speed_multiplier": 1.0
       },
       "minecraft:behavior.look_at_player": {
-        "priority": 6,
-        "look_distance": 4
-      },
-      "minecraft:behavior.avoid_mob_type": {
-          "priority": 6,
-          "entity_types": [
-            {
-              "filters": {
-                "test": "is_family",
-                "subject": "other",
-                "value": "player"
-              },
-              "max_dist": 10,
-              "walk_speed_multiplier": 0.8,
-              "sprint_speed_multiplier": 1.33
-            }
-          ]
-        },
-      "minecraft:behavior.hurt_by_target": {
-        "priority": 1
-      },
-      "minecraft:on_target_escape": {
-        "event": "minecraft:stop_exploding",
-        "target": "self"
+        "priority": 4,
+        "look_distance": 6.0,
+        "probability": 0.02
       }
     },
     "events": {
-      "minecraft:start_exploding": {
-        "sequence": [
-          {
-            "filters": {
-              "test": "has_component",
-              "operator": "!=",
-              "value": "minecraft:is_charged"
-            },
-            "add": {
-              "component_groups": [
-                "minecraft:exploding"
-              ]
-            }
-          },
-          {
-            "filters": {
-              "test": "has_component",
-              "value": "minecraft:is_charged"
-            },
-            "add": {
-              "component_groups": [
-                "minecraft:charged_exploding"
-              ]
-            }
-          }
-        ]
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "tapio:tapiopon_wild",
+            "tapio:tapiopon_calm"
+          ]
+        }
       },
-      "minecraft:stop_exploding": {
+      "minecraft:on_tame": {
         "remove": {
           "component_groups": [
-            "minecraft:exploding"
+            "tapio:tapiopon_wild",
+            "tapio:tapiopon_calm"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "tapio:tapiopon_tame"
+          ]
+        }
+      },
+      "minecraft:become_angry": {
+        "remove": {
+          "component_groups": [
+            "tapio:tapiopon_calm"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "tapio:tapiopon_angry"
+          ]
+        }
+      },
+      "minecraft:on_calm": {
+        "remove": {
+          "component_groups": [
+            "tapio:tapiopon_angry"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "tapio:tapiopon_calm"
           ]
         }
       }

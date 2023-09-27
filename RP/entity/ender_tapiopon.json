@@ -2,17 +2,17 @@
     "format_version": "1.10.0",
     "minecraft:client_entity": {
       "description": {
-        "identifier": "tapio:black_tapiopon",
+        "identifier": "tapio:ender_tapiopon",
         "materials": { "default": "tapiopon" },
         "textures": {
-          "default": "textures/tapiopon/entity/black_tapiopon"
+          "default": "textures/tapiopon/entity/ender_tapiopon"
         },
         "geometry": {
           "default": "geometry.tapiopon"
         },
         "render_controllers": [ "controller.render.tapiopon" ],
         "spawn_egg": {
-          "texture": "black_tapiopon_egg"
+          "texture": "ender_tapiopon_egg"
         },
         "scripts": {
           "animate": [
