@@ -1,0 +1,37 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tapio:anti_tapiopon_ball",
+      "category": "Items"
+    },
+
+    "components": {
+      "minecraft:icon": {
+        "texture": "anti_tapiopon_ball"
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "throw"
+        }
+      }
+    },
+    "events": {
+      "throw": {
+        "shoot": {
+          "projectile": "tapio:anti_tapiopon_ball_entity",
+          "launch_power": 3,
+          "angle_offset": 1
+        },
+        "swing": {},
+        "decrement_stack": {},
+        "run_command": {
+          "command": [
+            "playsound fire.ignite",
+            "playsound mob.witch.throw"
+          ]
+        }
+      }
+    }
+  }
+}
