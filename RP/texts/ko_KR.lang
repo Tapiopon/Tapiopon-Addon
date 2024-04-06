@@ -1,0 +1,30 @@
+entity.tapio:white_tapiopon.name=하얀 타피오폰
+entity.tapio:black_tapiopon.name=검은 타피오폰
+entity.tapio:green_tapiopon.name=초록 타피오폰
+entity.tapio:water_tapiopon.name=물 타피오폰
+entity.tapio:fire_tapiopon.name=불꽃 타피오폰
+entity.tapio:ender_tapiopon.name=엔더 타피오폰
+entity.tapio:purple_tapiopon.name=보라색 타피오폰
+
+entity.tapio:object_sleep_tapiopon.name=타피오폰 객체
+entity.tapio:cannon_tapiopon.name=대포 타피오폰
+entity.tapio:christmas_tapiopon.name=크리스마스 타피오폰
+
+item.spawn_egg.entity.tapio:white_tapiopon.name=하얀 타피오폰 스폰 알
+item.spawn_egg.entity.tapio:black_tapiopon.name=검은 타피오폰 스폰 알
+item.spawn_egg.entity.tapio:green_tapiopon.name=초록 타피오폰 스폰 알
+item.spawn_egg.entity.tapio:purple_tapiopon.name=보라색 타피오폰 스폰 알
+item.spawn_egg.entity.tapio:water_tapiopon.name=물 타피오폰 스폰 알
+item.spawn_egg.entity.tapio:fire_tapiopon.name=불꽃 타피오폰 스폰 알
+item.spawn_egg.entity.tapio:ender_tapiopon.name=엔더 타피오폰 스폰 알
+
+item.spawn_egg.entity.tapio:object_sleep_tapiopon.name=타피오폰 객체 스폰 알
+item.spawn_egg.entity.tapio:cannon_tapiopon.name=대포 타피오폰 스폰 알
+item.spawn_egg.entity.tapio:christmas_tapiopon.name=크리스마스 타피오폰 스폰 알
+
+item.tapio:tapiopon_ball=타피오폰 재료
+item.tapio:anti_tapiopon_ball=독 타피오폰 재료
+
+tile.tapio:tapiopon_crafting_table.name=타피오폰 작업대
+tile.tapio:tapiopon_desk.name=타피오폰 책상
+tile.tapio:tapiopon_light.name=타피오폰 라이트

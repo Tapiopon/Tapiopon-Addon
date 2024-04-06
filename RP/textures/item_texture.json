@@ -19,6 +19,9 @@
         "ender_tapiopon_egg": {
           "textures": "textures/tapiopon/item/ender_tapiopon_egg"
         },
+        "purple_tapiopon_egg": {
+          "textures": "textures/tapiopon/item/purple_tapiopon_egg"
+        },
         "tapiopon_sleep_object": {
           "textures": "textures/tapiopon/item/tapiopon_sleep_object"
         },

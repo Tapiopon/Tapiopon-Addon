@@ -8,6 +8,48 @@
       "is_experimental": false
     },
     "component_groups": {
+      "tapio:tapiopon_baby": {
+        "minecraft:is_baby": {
+        },
+        "minecraft:scale": {
+          "value": 0.7
+        },
+        "minecraft:ageable": {
+          "duration": 1200,
+          "feed_items": [
+            "tapio:tapiopon_ball"
+          ],
+          "grow_up": {
+            "event": "minecraft:ageable_grow_up",
+            "target": "self"
+          }
+        }
+      },
+      "tapio:tapiopon_adult": {
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(1,5)",
+          "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+        },
+        "minecraft:breedable": {
+          "require_tame": true,
+          "require_full_health": true,
+          "breeds_with": {
+            "mate_type": "tapio:water_tapiopon",
+            "baby_type": "tapio:water_tapiopon",
+            "breed_event": {
+              "event": "minecraft:entity_born",
+              "target": "baby"
+            }
+          },
+          "breed_items": [
+            "tapio:tapiopon_ball"
+          ]
+        },
+        "minecraft:behavior.breed": {
+          "priority": 3,
+          "speed_multiplier": 1.0
+        }
+      },
       "tapio:tapiopon_wild": {
         "minecraft:behavior.hurt_by_target": {
           "priority": 1
@@ -203,7 +245,8 @@
         "add": {
           "component_groups": [
             "tapio:tapiopon_wild",
-            "tapio:tapiopon_calm"
+            "tapio:tapiopon_calm",
+            "tapio:tapiopon_adult"
           ]
         }
       },

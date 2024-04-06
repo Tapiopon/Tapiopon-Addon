@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "tapio:white_tapiopon",
+      "identifier": "tapio:purple_tapiopon",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -34,8 +34,8 @@
           "require_tame": true,
           "require_full_health": true,
           "breeds_with": {
-            "mate_type": "tapio:white_tapiopon",
-            "baby_type": "tapio:white_tapiopon",
+            "mate_type": "tapio:purple_tapiopon",
+            "baby_type": "tapio:purple_tapiopon",
             "breed_event": {
               "event": "minecraft:entity_born",
               "target": "baby"
@@ -53,36 +53,13 @@
       "tapio:tapiopon_wild": {
         "minecraft:behavior.hurt_by_target": {
           "priority": 1
-        },
-        "minecraft:behavior.nearest_attackable_target": {
-          "priority": 2,
-          "must_see": true,
-          "reselect_targets": true,
-          "within_radius": 25.0,
-          "entity_types": [
-            {
-              "filters": {
-                "test": "is_family",
-                "subject": "other",
-                "value": "black_tapiopon"
-              }
-            }
-          ]
         }
       },
       "tapio:tapiopon_tame": {
         "minecraft:is_tamed": {},
         "minecraft:health": {
-          "value": 40,
-          "max": 40
-        },
-        "minecraft:healable": {
-          "items": [
-            {
-              "item": "tapio:tapiopon_ball",
-              "heal_amount": 5
-            }
-          ]
+          "value": 24,
+          "max": 24
         },
         "minecraft:behavior.hurt_by_target": {
           "priority": 1,
@@ -134,7 +111,7 @@
           "broadcast_anger": true,
           "broadcast_range": 20,
           "broadcast_targets": [
-            "white_tapiopon"
+            "purple_tapiopon"
           ],
           "calm_event": {
             "event": "minecraft:on_calm",
@@ -146,7 +123,7 @@
     "components": {
       "minecraft:is_hidden_when_invisible": {},
       "minecraft:type_family": {
-        "family": ["mob", "tapiopon", "white_tapiopon"]
+        "family": ["mob", "tapiopon", "purple_tapiopon"]
       },
       "minecraft:loot": {
         "table": "loot_tables/tapio/entity/tapiopon.json"
@@ -157,8 +134,8 @@
       },
       "minecraft:nameable": {},
       "minecraft:health": {
-        "value": 30,
-        "max": 30
+        "value": 20,
+        "max": 20
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -188,7 +165,9 @@
         "value": 1.4
       },
       "minecraft:attack": {
-        "damage": 1
+        "damage": 2,
+        "effect_name": "poison",
+        "effect_duration": 5
       },
       "minecraft:leashable": {
         "soft_distance": 4.0,

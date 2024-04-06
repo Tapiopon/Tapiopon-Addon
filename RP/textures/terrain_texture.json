@@ -7,9 +7,6 @@
     "tapiopon_light": {
       "textures": "textures/tapiopon/blocks/tapiopon_light"
     },
-    "tapiopon_light_top": {
-      "textures": "textures/tapiopon/blocks/tapiopon_light_top"
-    },
     "tapiopon_desk": {
       "textures": "textures/tapiopon/blocks/tapiopon_desk"
     },
