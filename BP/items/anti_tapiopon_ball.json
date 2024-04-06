@@ -20,7 +20,7 @@
       "throw": {
         "shoot": {
           "projectile": "tapio:anti_tapiopon_ball_entity",
-          "launch_power": 3,
+          "launch_power": 8,
           "angle_offset": 1
         },
         "swing": {},
