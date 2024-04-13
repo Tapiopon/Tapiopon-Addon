@@ -11,6 +11,41 @@
   - たぴおぽんの音声は想像とは全く違うと思うので配信をする際は一度たぴおぽんアドオンをテストすることをオススメします。
 
 ## 追加されるもの
+### レシピ
+
+たぴおぽんの素材
+- ジャガイモx4
+
+![ball](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/09885dde-d6b1-4d85-b89c-acdcd45ae26a)
+
+毒付きたぴおぽんの素材
+- たぴおぽんの素材x8
+- クモの目
+
+![image](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/b9c12162-0228-4e0f-8b51-7017222b2ec0)
+
+
+たぴおぽんの作業台
+- たぴおぽんインゴットx4
+
+![image](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/af8a3f81-5ac9-4560-ad7c-fb49f183cae7)
+
+たぴおぽんのデスク
+- たぴおぽんインゴットx7
+- たぴおぽんの素材
+
+![image](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/86c16feb-3618-4aba-8939-4f44261abd9e)
+
+たぴおぽんライト
+- グロウストーンの粉x8
+- たぴおぽんインゴット
+![image](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/3d16768f-79ff-4681-a8f9-34c76e177328)
+
+たぴおぽんインゴット
+- たぴおぽんの素材
+![image](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/c58506ec-0b16-45ad-aac4-7649ddfc0d2b)
+
+---
 ### モブ
 白たぴおぽん
 - 移動速度: 0.25
@@ -108,8 +143,14 @@
 
 ---
 ### ブロック
-> 準備中
+たぴおぽんライト
 
----
-### レシピ
-> 準備中
+![image](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/8a808d4a-6071-4702-b5aa-da52bc82dc95)
+
+たぴおぽんの作業台
+
+![image](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/7b6376c7-413d-483e-b8bf-c7056c53f389)
+
+たぴおぽんのデスク
+
+![image](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/30ec091f-e556-49a7-bb55-bf1dde5082d8)
