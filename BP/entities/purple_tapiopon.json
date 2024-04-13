@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "tapio:ender_tapiopon",
+      "identifier": "tapio:purple_tapiopon",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -37,8 +37,8 @@
           "require_tame": true,
           "require_full_health": true,
           "breeds_with": {
-            "mate_type": "tapio:ender_tapiopon",
-            "baby_type": "tapio:ender_tapiopon",
+            "mate_type": "tapio:purple_tapiopon",
+            "baby_type": "tapio:purple_tapiopon",
             "breed_event": {
               "event": "minecraft:entity_born",
               "target": "baby"
@@ -82,7 +82,7 @@
           "stop_distance": 2
         },
         "minecraft:attack": {
-          "damage": 4
+          "damage": 2
         },
         "minecraft:behavior.owner_hurt_by_target": {
           "priority": 1
@@ -114,7 +114,7 @@
           "broadcast_anger": true,
           "broadcast_range": 20,
           "broadcast_targets": [
-            "ender_tapiopon"
+            "purple_tapiopon"
           ],
           "calm_event": {
             "event": "minecraft:on_calm",
@@ -126,7 +126,7 @@
     "components": {
       "minecraft:is_hidden_when_invisible": {},
       "minecraft:type_family": {
-        "family": ["mob", "tapiopon", "ender_tapiopon"]
+        "family": ["mob", "tapiopon", "purple_tapiopon"]
       },
       "minecraft:loot": {
         "table": "loot_tables/tapio/entity/tapiopon.json"
@@ -137,8 +137,8 @@
       },
       "minecraft:nameable": {},
       "minecraft:health": {
-        "value": 48,
-        "max": 48
+        "value": 20,
+        "max": 20
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -146,28 +146,16 @@
             "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
             "cause": "lava",
             "damage_per_tick": 4
-          },
-          {
-            "filters": { "test": "in_contact_with_water", "operator": "==", "value": true },
-            "cause": "drowning",
-            "damage_per_tick": 1
           }
         ]
       },
       "minecraft:movement": {
-        "value": 0.35
-      },
-      "minecraft:teleport": {
-        "random_teleports": true,
-        "max_random_teleport_time": 30,
-        "random_teleport_cube": [64, 32, 64],
-        "target_distance": 16,
-        "target_teleport_chance": 0.05,
-        "light_teleport_chance": 0.05
+        "value": 0.25
       },
       "minecraft:navigation.walk": {
-        "can_path_over_water": false,
-        "avoid_water": true
+        "can_path_over_water": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
       },
       "minecraft:movement.basic": {},
       "minecraft:jump.static": {},
@@ -180,7 +168,9 @@
         "value": 1.4
       },
       "minecraft:attack": {
-        "damage": 8
+        "damage": 2,
+        "effect_name": "poison",
+        "effect_duration": 5
       },
       "minecraft:leashable": {
         "soft_distance": 4.0,

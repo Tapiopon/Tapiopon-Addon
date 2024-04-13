@@ -2,24 +2,27 @@
   "format_version": "1.16",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "tapio:tapiopon_ball"
+      "identifier": "tapio:anti_tapiopon_ball"
     },
     "tags": [
-      "crafting_table",
       "tapiopon_crafting_table"
     ],
     "pattern": [
-      "AA",
-      "AA"
+      "AAA",
+      "ABA",
+      "AAA"
     ],
     "key": {
       "A": {
-        "item": "minecraft:potato"
+        "item": "tapio:tapiopon_ball"
+      },
+      "B": {
+        "item": "minecraft:spider_eye"
       }
     },
     "result": {
-      "item": "tapio:tapiopon_ball",
-      "count": 1
+      "item": "tapio:anti_tapiopon_ball",
+      "count": 8
     },
     "priority": 2
   }

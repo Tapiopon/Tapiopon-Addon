@@ -2,11 +2,10 @@
   "format_version": "1.16",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "tapio:tapiopon_ball"
+      "identifier": "tapio:tapiopon_crafting_table"
     },
     "tags": [
-      "crafting_table",
-      "tapiopon_crafting_table"
+      "crafting_table"
     ],
     "pattern": [
       "AA",
@@ -14,11 +13,11 @@
     ],
     "key": {
       "A": {
-        "item": "minecraft:potato"
+        "item": "tapio:tapiopon_ingot"
       }
     },
     "result": {
-      "item": "tapio:tapiopon_ball",
+      "item": "tapio:tapiopon_crafting_table",
       "count": 1
     },
     "priority": 2
