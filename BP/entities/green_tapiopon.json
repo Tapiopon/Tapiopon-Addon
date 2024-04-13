@@ -61,8 +61,8 @@
       "tapio:tapiopon_tame": {
         "minecraft:is_tamed": {},
         "minecraft:health": {
-          "value": 15,
-          "max": 15
+          "value": 32,
+          "max": 32
         },
         "minecraft:behavior.hurt_by_target": {
           "priority": 1,
@@ -82,7 +82,7 @@
           "stop_distance": 2
         },
         "minecraft:attack": {
-          "damage": 3
+          "damage": 4
         },
         "minecraft:behavior.owner_hurt_by_target": {
           "priority": 1
