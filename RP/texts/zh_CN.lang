@@ -24,6 +24,7 @@ item.spawn_egg.entity.tapio:christmas_tapiopon.name=圣诞泰皮欧波生成蛋
 
 item.tapio:tapiopon_ball=泰皮欧波的素材
 item.tapio:anti_tapiopon_ball=有毒泰皮欧波的素材
+item.tapio:tapiopon_ingot=塔皮奥庞锭
 
 tile.tapio:tapiopon_crafting_table.name=泰皮欧波工作台
 tile.tapio:tapiopon_desk.name=泰皮欧波桌子

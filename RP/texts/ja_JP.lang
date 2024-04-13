@@ -27,6 +27,7 @@ item.spawn_egg.entity.tapio:christmas_tapiopon.name=クリスマスたぴおぽ�
 
 item.tapio:tapiopon_ball=たぴおぽんの素材
 item.tapio:anti_tapiopon_ball=毒付きたぴおぽんの素材
+item.tapio:tapiopon_ingot=たぴおぽんインゴット
 
 tile.tapio:tapiopon_crafting_table.name=たぴおぽんの作業台
 tile.tapio:tapiopon_desk.name=たぴおぽんのデスク

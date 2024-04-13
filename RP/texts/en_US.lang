@@ -24,6 +24,7 @@ item.spawn_egg.entity.tapio:christmas_tapiopon.name=Christmas Tapiopon Spawn Egg
 
 item.tapio:tapiopon_ball=Tapiopon Material
 item.tapio:anti_tapiopon_ball=Poisoned Tapiopon Material
+item.tapio:tapiopon_ingot=Tapiopon Ingot
 
 tile.tapio:tapiopon_crafting_table.name=Tapiopon Crafting Table
 tile.tapio:tapiopon_desk.name=Tapiopon Desk
