@@ -1,13 +1,10 @@
 {
-  "format_version": "1.19.30",
+  "format_version": "1.21.20",
   "minecraft:block": {
     "description": {
       "identifier": "tapio:tapiopon_desk",
       "menu_category": {
         "category": "Construction"
-      },
-      "properties": {
-        "tapio:block_facing": [2, 3, 4, 5]
       }
     },
     "components": {
@@ -24,43 +21,7 @@
       "minecraft:selection_box": true,
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1.0
-      },
-      "minecraft:on_player_placing": {
-        "event": "tapio:block_placed"
       }
-    },
-    "events": {
-      "tapio:block_placed": {
-        "set_block_property": {
-          "tapio:block_facing": "query.cardinal_facing_2d"
-        }
-      }
-    },
-    "permutations": [
-      {
-        "condition": "query.block_property('tapio:block_facing') == 2",
-        "components": {
-          "minecraft:rotation": [0, 180, 0]
-        }
-      },
-      {
-        "condition": "query.block_property('tapio:block_facing') == 3",
-        "components": {
-          "minecraft:rotation": [0, 0, 0]
-        }
-      },
-      {
-        "condition": "query.block_property('tapio:block_facing') == 4",
-        "components": {
-          "minecraft:rotation": [0, 270, 0]
-        }
-      },
-      {
-        "condition": "query.block_property('tapio:block_facing') == 5",
-        "components": {
-          "minecraft:rotation": [0, 90, 0]
-        }
-      }
-    ]
+    }
   }
 }

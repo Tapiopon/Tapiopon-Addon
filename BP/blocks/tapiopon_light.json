@@ -1,5 +1,5 @@
 {
-  "format_version": "1.19.30",
+  "format_version": "1.21.20",
   "minecraft:block": {
     "description": {
       "identifier": "tapio:tapiopon_light",
@@ -30,13 +30,7 @@
         "origin": [-3.0, 0.0, -3.0],
         "size": [6.0, 7.0, 6.0]
       },
-      "minecraft:placement_filter": {
-        "conditions": [
-          {
-            "allowed_faces": ["up"]
-          }
-        ]
-      },
+      "minecraft:light_emission": 15,
       "minecraft:light_dampening": 0,
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.5
@@ -45,38 +39,6 @@
         "explosion_resistance": 0
       },
       "minecraft:friction": 0.4
-    },
-    "events": {
-      "tapio:light_off": {
-        "set_block_property": {
-          "tapio:is_light": "false"
-        }
-      },
-      "tapio:light_on": {
-        "set_block_property": {
-          "tapio:is_light": "true"
-        }
-      }
-    },
-    "permutations": [
-      {
-        "condition": "query.block_property('tapio:is_light') == false",
-        "components": {
-          "minecraft:light_emission": 0,
-          "minecraft:on_interact": {
-            "event": "tapio:light_on"
-          }
-        }
-      },
-      {
-        "condition": "query.block_property('tapio:is_light') == true",
-        "components": {
-          "minecraft:light_emission": 15,
-          "minecraft:on_interact": {
-            "event": "tapio:light_off"
-          }
-        }
-      }
-    ]
+    }
   }
 }
