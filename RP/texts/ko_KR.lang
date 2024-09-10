@@ -5,6 +5,7 @@ entity.tapio:water_tapiopon.name=물 타피오폰
 entity.tapio:fire_tapiopon.name=불꽃 타피오폰
 entity.tapio:ender_tapiopon.name=엔더 타피오폰
 entity.tapio:purple_tapiopon.name=보라색 타피오폰
+entity.tapio:nekopery.name=네코 페리
 
 entity.tapio:object_sleep_tapiopon.name=타피오폰 객체
 entity.tapio:cannon_tapiopon.name=대포 타피오폰
@@ -17,6 +18,7 @@ item.spawn_egg.entity.tapio:purple_tapiopon.name=보라색 타피오폰 스폰 �
 item.spawn_egg.entity.tapio:water_tapiopon.name=물 타피오폰 스폰 알
 item.spawn_egg.entity.tapio:fire_tapiopon.name=불꽃 타피오폰 스폰 알
 item.spawn_egg.entity.tapio:ender_tapiopon.name=엔더 타피오폰 스폰 알
+item.spawn_egg.entity.tapio:nekopery.name=네코 페리 스폰 알
 
 item.spawn_egg.entity.tapio:object_sleep_tapiopon.name=타피오폰 객체 스폰 알
 item.spawn_egg.entity.tapio:cannon_tapiopon.name=대포 타피오폰 스폰 알

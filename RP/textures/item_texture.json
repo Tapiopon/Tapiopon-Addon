@@ -4,6 +4,9 @@
         "white_tapiopon_egg": {
           "textures": "textures/tapiopon/item/white_tapiopon_egg"
         },
+        "nekopery_egg": {
+          "textures": "textures/tapiopon/item/nekopery_egg"
+        },
         "black_tapiopon_egg": {
           "textures": "textures/tapiopon/item/black_tapiopon_egg"
         },

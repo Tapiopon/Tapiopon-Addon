@@ -1,6 +1,3 @@
-pack.name=たぴおぽんアドオン
-pack.description=たぴおぽんのあどおんベータ！ ver[x.x.x]
-
 entity.tapio:white_tapiopon.name=白たぴおぽん
 entity.tapio:black_tapiopon.name=黒たぴおぽん
 entity.tapio:green_tapiopon.name=緑たぴおぽん
@@ -8,6 +5,7 @@ entity.tapio:water_tapiopon.name=水たぴおぽん
 entity.tapio:fire_tapiopon.name=炎たぴおぽん
 entity.tapio:ender_tapiopon.name=エンダーたぴおぽん
 entity.tapio:purple_tapiopon.name=紫たぴおぽん
+entity.tapio:nekopery.name=猫ペリー
 
 entity.tapio:object_sleep_tapiopon.name=たぴおぽんのオブジェクト
 entity.tapio:cannon_tapiopon.name=キャノンたぴおぽん
@@ -20,6 +18,7 @@ item.spawn_egg.entity.tapio:purple_tapiopon.name=紫たぴおぽんのスポー�
 item.spawn_egg.entity.tapio:water_tapiopon.name=水たぴおぽんのスポーンエッグ
 item.spawn_egg.entity.tapio:fire_tapiopon.name=炎たぴおぽんのスポーンエッグ
 item.spawn_egg.entity.tapio:ender_tapiopon.name=エンダーたぴおぽんのスポーンエッグ
+item.spawn_egg.entity.tapio:nekopery.name=猫ペリーのスポーンエッグ
 
 item.spawn_egg.entity.tapio:object_sleep_tapiopon.name=たぴおぽんのオブジェクト
 item.spawn_egg.entity.tapio:cannon_tapiopon.name=キャノンたぴおぽんのスポーンエッグ

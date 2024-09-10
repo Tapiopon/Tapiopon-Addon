@@ -96,6 +96,16 @@
         },
         "pitch": [0.70, 1.10],
         "volume": 1.2
+      },
+      "tapio:nekopery": {
+        "events": {
+          "ambient": "mob.tapiopon.cry",
+          "death": "mob.tapiopon.death",
+          "hurt": "mob.tapiopon.hit",
+          "angry": "mob.tapiopon.angry"
+        },
+        "pitch": [1.20, 1.60],
+        "volume": 1.0
       }
     }
   }

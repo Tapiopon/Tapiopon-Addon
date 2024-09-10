@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tapio:nekopery",
+      "materials": { "default": "tapiopon" },
+      "textures": {
+        "default": "textures/tapiopon/entity/nekopery"
+      },
+      "geometry": {
+        "default": "geometry.nekopery"
+      },
+      "render_controllers": ["controller.render.tapiopon"],
+      "spawn_egg": {
+        "texture": "nekopery_egg"
+      },
+      "scripts": {
+        "animate": [
+            "setup",
+          {
+            "walk": "query.modified_move_speed"
+            },
+            "look_at_target",
+          {
+            "sit": "query.is_sitting"
+            }
+          ]
+      },
+      "animations": {
+        "setup": "animation.tapiopon.setup",
+        "walk": "animation.tapiopon.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "sit": "animation.tapiopon.sit"
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@ entity.tapio:water_tapiopon.name=水色泰皮欧波
 entity.tapio:fire_tapiopon.name=火色泰皮欧波
 entity.tapio:ender_tapiopon.name=末影色泰皮欧波
 entity.tapio:purple_tapiopon.name=紫色泰皮欧波
+entity.tapio:nekopery.name=猫佩里
 
 entity.tapio:object_sleep_tapiopon.name=泰皮欧波的物品
 entity.tapio:cannon_tapiopon.name=大炮泰皮欧波
@@ -17,6 +18,7 @@ item.spawn_egg.entity.tapio:purple_tapiopon.name=紫色泰皮欧波生成蛋
 item.spawn_egg.entity.tapio:water_tapiopon.name=水色泰皮欧波生成蛋
 item.spawn_egg.entity.tapio:fire_tapiopon.name=火色泰皮欧波生成蛋
 item.spawn_egg.entity.tapio:ender_tapiopon.name=末影色泰皮欧波生成蛋
+item.spawn_egg.entity.tapio:nekopery.name=猫佩里生成蛋
 
 item.spawn_egg.entity.tapio:object_sleep_tapiopon.name=泰皮欧波的物品生成蛋
 item.spawn_egg.entity.tapio:cannon_tapiopon.name=大炮泰皮欧波生成蛋

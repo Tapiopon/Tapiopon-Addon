@@ -5,6 +5,7 @@ entity.tapio:water_tapiopon.name=Water Tapiopon
 entity.tapio:fire_tapiopon.name=Fire Tapiopon
 entity.tapio:ender_tapiopon.name=Ender Tapiopon
 entity.tapio:purple_tapiopon.name=Purple Tapiopon
+entity.tapio:nekopery.name=Neko Perry
 
 entity.tapio:object_sleep_tapiopon.name=Tapiopon Object
 entity.tapio:cannon_tapiopon.name=Cannon Tapiopon
@@ -17,6 +18,7 @@ item.spawn_egg.entity.tapio:purple_tapiopon.name=Spawn Egg of Purple Tapiopon
 item.spawn_egg.entity.tapio:water_tapiopon.name=Spawn Egg of Water Tapiopon
 item.spawn_egg.entity.tapio:fire_tapiopon.name=Spawn Egg of Fire Tapiopon
 item.spawn_egg.entity.tapio:ender_tapiopon.name=Spawn Egg of Ender Tapiopon
+item.spawn_egg.entity.tapio:nekopery.name=Spawn Egg of Neko Perry
 
 item.spawn_egg.entity.tapio:object_sleep_tapiopon.name=Tapiopon Object Spawn Egg
 item.spawn_egg.entity.tapio:cannon_tapiopon.name=Cannon Tapiopon Spawn Egg
