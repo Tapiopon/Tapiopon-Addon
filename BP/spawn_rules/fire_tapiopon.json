@@ -2,13 +2,12 @@
   "format_version": "1.8.0",
   "minecraft:spawn_rules": {
     "description": {
-      "identifier": "tapio:fire_tapiopon",
+      "identifier": "tapiopon:fire_tapiopon",
       "population_control": "animal"
     },
     "conditions": [
       {
         "minecraft:spawns_underground": {},
-
         "minecraft:spawns_on_block_prevented_filter": [
           "minecraft:nether_wart_block",
           "minecraft:shroomlight"
@@ -20,11 +19,10 @@
           "min_size": 1,
           "max_size": 3
         },
-
         "minecraft:biome_filter": {
-          "test": "has_biome_tag", 
-          "operator": "==", 
-          "value": "crimson_forest" 
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "crimson_forest"
         }
       }
     ]

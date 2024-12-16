@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "tapio:anti_tapiopon_ball_entity",
+      "identifier": "tapiopon:anti_tapiopon_ball_entity",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false,
@@ -20,7 +20,7 @@
             "damage": 3,
             "knockback": true
           },
-          "remove_on_hit": { },
+          "remove_on_hit": {},
           "particle_on_hit": {
             "particle_type": "snowballpoof",
             "num_particles": 6,
@@ -32,10 +32,13 @@
         "power": 1.5,
         "gravity": 0.03,
         "angle_offset": 0.0,
-        "offset": [ 0, -0.1, 0 ]
+        "offset": [
+          0,
+          -0.1,
+          0
+        ]
       },
-	    "minecraft:physics": {
-      },
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true

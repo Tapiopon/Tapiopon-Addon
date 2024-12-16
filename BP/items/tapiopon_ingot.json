@@ -2,10 +2,9 @@
   "format_version": "1.20.0",
   "minecraft:item": {
     "description": {
-      "identifier": "tapio:tapiopon_ingot",
+      "identifier": "tapiopon:tapiopon_ingot",
       "category": "Items"
     },
-    
     "components": {
       "minecraft:icon": {
         "texture": "tapiopon_ingot"

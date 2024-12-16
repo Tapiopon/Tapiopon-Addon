@@ -2,14 +2,18 @@
   "format_version": "1.16.210",
   "minecraft:entity": {
     "description": {
-      "identifier": "tapio:object_sleep_tapiopon",
+      "identifier": "tapiopon:object_sleep_tapiopon",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
     },
     "components": {
       "minecraft:type_family": {
-        "family": ["mob", "inanimate", "obj_sleep_tapiopon"]
+        "family": [
+          "mob",
+          "inanimate",
+          "obj_sleep_tapiopon"
+        ]
       },
       "minecraft:collision_box": {
         "width": 0.5,
@@ -22,7 +26,12 @@
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
             "cause": "lava",
             "damage_per_tick": 4
           }
@@ -50,7 +59,6 @@
         ]
       }
     },
-
     "events": {}
   }
 }

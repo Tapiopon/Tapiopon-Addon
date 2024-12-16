@@ -2,12 +2,12 @@
   "format_version": "1.21.20",
   "minecraft:block": {
     "description": {
-      "identifier": "tapio:tapiopon_light",
+      "identifier": "tapiopon:tapiopon_light",
       "menu_category": {
         "category": "Construction"
       },
       "properties": {
-        "tapio:is_light": [false, true]
+        "tapiopon:is_light": [false, true]
       }
     },
     "components": {

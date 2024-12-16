@@ -2,7 +2,7 @@
   "format_version": "1.16",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "tapio:anti_tapiopon_ball"
+      "identifier": "tapiopon:anti_tapiopon_ball"
     },
     "tags": [
       "tapiopon_crafting_table"
@@ -14,14 +14,14 @@
     ],
     "key": {
       "A": {
-        "item": "tapio:tapiopon_ball"
+        "item": "tapiopon:white_tapiopon_ball"
       },
       "B": {
         "item": "minecraft:spider_eye"
       }
     },
     "result": {
-      "item": "tapio:anti_tapiopon_ball",
+      "item": "tapiopon:anti_tapiopon_ball",
       "count": 8
     },
     "priority": 2

@@ -2,10 +2,9 @@
   "format_version": "1.20.0",
   "minecraft:item": {
     "description": {
-      "identifier": "tapio:anti_tapiopon_ball",
+      "identifier": "tapiopon:anti_tapiopon_ball",
       "category": "Items"
     },
-
     "components": {
       "minecraft:icon": {
         "texture": "anti_tapiopon_ball"

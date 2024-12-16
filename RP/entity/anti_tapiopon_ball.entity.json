@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "tapio:anti_tapiopon_ball_entity",
+      "identifier": "tapiopon:anti_tapiopon_ball_entity",
       "materials": {
         "default": "snowball"
       },
@@ -12,7 +12,9 @@
       "geometry": {
         "default": "geometry.item_sprite"
       },
-      "render_controllers": [ "controller.render.item_sprite" ],
+      "render_controllers": [
+        "controller.render.item_sprite"
+      ],
       "animations": {
         "flying": "animation.actor.billboard"
       },
@@ -23,4 +25,4 @@
       }
     }
   }
-} 
+}

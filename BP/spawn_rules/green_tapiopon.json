@@ -2,7 +2,7 @@
   "format_version": "1.8.0",
   "minecraft:spawn_rules": {
     "description": {
-      "identifier": "tapio:green_tapiopon",
+      "identifier": "tapiopon:green_tapiopon",
       "population_control": "animal"
     },
     "conditions": [
@@ -18,12 +18,13 @@
           "default": 4
         },
         "minecraft:herd": {
-          "min_size":1,
-          "max_size":2
+          "min_size": 1,
+          "max_size": 2
         },
-    
         "minecraft:biome_filter": {
-          "test": "has_biome_tag", "operator":"==", "value": "animal"
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "animal"
         }
       }
     ]

@@ -2,12 +2,16 @@
   "format_version": "1.21.20",
   "minecraft:block": {
     "description": {
-      "identifier": "tapio:tapiopon_crafting_table",
+      "identifier": "tapiopon:tapiopon_crafting_table",
       "menu_category": {
         "category": "Construction"
       },
-      "properties": {
-        "tapio:block_facing": [2, 3, 4, 5]
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [
+            "minecraft:cardinal_direction"
+          ]
+        }
       }
     },
     "components": {
@@ -29,9 +33,61 @@
         "explosion_resistance": 15
       },
       "minecraft:crafting_table": {
-        "crafting_tags": ["tapiopon_crafting_table"],
+        "crafting_tags": [
+          "tapiopon_crafting_table"
+        ],
         "table_name": "たぴおぽん専用作業台"
       }
-    }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' ",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' ",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' ",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' ",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          }
+        }
+      }
+    ]
   }
 }

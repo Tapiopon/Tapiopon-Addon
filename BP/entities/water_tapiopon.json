@@ -2,22 +2,21 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "tapio:water_tapiopon",
+      "identifier": "tapiopon:water_tapiopon",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
     },
     "component_groups": {
-      "tapio:tapiopon_baby": {
-        "minecraft:is_baby": {
-        },
+      "tapiopon:tapiopon_baby": {
+        "minecraft:is_baby": {},
         "minecraft:scale": {
           "value": 0.7
         },
         "minecraft:ageable": {
           "duration": 1200,
           "feed_items": [
-            "tapio:tapiopon_ball"
+            "tapiopon:white_tapiopon_ball"
           ],
           "grow_up": {
             "event": "minecraft:ageable_grow_up",
@@ -25,7 +24,7 @@
           }
         }
       },
-      "tapio:tapiopon_adult": {
+      "tapiopon:tapiopon_adult": {
         "minecraft:scale": {
           "value": 1.4
         },
@@ -37,15 +36,15 @@
           "require_tame": true,
           "require_full_health": true,
           "breeds_with": {
-            "mate_type": "tapio:water_tapiopon",
-            "baby_type": "tapio:water_tapiopon",
+            "mate_type": "tapiopon:water_tapiopon",
+            "baby_type": "tapiopon:water_tapiopon",
             "breed_event": {
               "event": "minecraft:entity_born",
               "target": "baby"
             }
           },
           "breed_items": [
-            "tapio:tapiopon_ball"
+            "tapiopon:white_tapiopon_ball"
           ]
         },
         "minecraft:behavior.breed": {
@@ -53,18 +52,18 @@
           "speed_multiplier": 1.0
         }
       },
-      "tapio:tapiopon_wild": {
+      "tapiopon:tapiopon_wild": {
         "minecraft:behavior.hurt_by_target": {
           "priority": 1
         },
-        "minecraft:behavior.nearest_attackable_target":{
+        "minecraft:behavior.nearest_attackable_target": {
           "priority": 2,
-          "must_see":true,
+          "must_see": true,
           "reselect_targets": true,
           "within_radius": 25.0,
-          "entity_types":[
+          "entity_types": [
             {
-              "filters":{
+              "filters": {
                 "test": "is_family",
                 "subject": "other",
                 "value": "fire_tapiopon"
@@ -73,9 +72,8 @@
           ]
         }
       },
-      "tapio:tapiopon_tame": {
-        "minecraft:is_tamed": {
-        },
+      "tapiopon:tapiopon_tame": {
+        "minecraft:is_tamed": {},
         "minecraft:health": {
           "value": 40,
           "max": 40
@@ -106,13 +104,12 @@
         "minecraft:behavior.owner_hurt_target": {
           "priority": 2
         },
-        "minecraft:sittable": {
-        }
+        "minecraft:sittable": {}
       },
-      "tapio:tapiopon_calm": {
+      "tapiopon:tapiopon_calm": {
         "minecraft:tameable": {
           "probability": 0.2,
-          "tame_items": "tapio:tapiopon_ball",
+          "tame_items": "tapiopon:white_tapiopon_ball",
           "tame_event": {
             "event": "minecraft:on_tame",
             "target": "self"
@@ -123,7 +120,7 @@
           "target": "self"
         }
       },
-      "tapio:tapiopon_angry": {
+      "tapiopon:tapiopon_angry": {
         "minecraft:angry": {
           "angry_sound": "angry",
           "sound_interval": 10,
@@ -141,16 +138,18 @@
       }
     },
     "components": {
-      "minecraft:is_hidden_when_invisible": {
-      },
+      "minecraft:is_hidden_when_invisible": {},
       "minecraft:type_family": {
-        "family": ["mob","tapiopon","water_tapiopon"]
+        "family": [
+          "mob",
+          "tapiopon",
+          "water_tapiopon"
+        ]
       },
       "minecraft:loot": {
-        "table": "loot_tables/tapio/entity/tapiopon.json"
+        "table": "loot_tables/tapio/entity/water_tapiopon.json"
       },
-      "minecraft:nameable": {
-      },
+      "minecraft:nameable": {},
       "minecraft:health": {
         "value": 30,
         "max": 30
@@ -158,7 +157,12 @@
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
             "cause": "lava",
             "damage_per_tick": 4
           }
@@ -176,8 +180,7 @@
         "breathes_air": true,
         "breathes_water": true
       },
-      "minecraft:movement.generic": {
-      },
+      "minecraft:movement.generic": {},
       "minecraft:navigation.generic": {
         "is_amphibious": true,
         "can_path_over_water": true,
@@ -186,10 +189,8 @@
         "can_breach": true,
         "can_sink": false
       },
-      "minecraft:jump.static": {
-      },
-      "minecraft:can_climb": {
-      },
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
       "minecraft:collision_box": {
         "width": 0.65,
         "height": 0.65
@@ -213,14 +214,12 @@
         "interval": 0,
         "xz_dist": 20
       },
-      "minecraft:physics": {
-      },
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
       },
-      "minecraft:conditional_bandwidth_optimization": {
-      },
+      "minecraft:conditional_bandwidth_optimization": {},
       "minecraft:behavior.mount_pathing": {
         "priority": 1,
         "speed_multiplier": 1.25,
@@ -247,46 +246,46 @@
       "minecraft:entity_spawned": {
         "add": {
           "component_groups": [
-            "tapio:tapiopon_wild",
-            "tapio:tapiopon_calm",
-            "tapio:tapiopon_adult"
+            "tapiopon:tapiopon_wild",
+            "tapiopon:tapiopon_calm",
+            "tapiopon:tapiopon_adult"
           ]
         }
       },
       "minecraft:on_tame": {
         "remove": {
           "component_groups": [
-            "tapio:tapiopon_wild",
-            "tapio:tapiopon_calm"
+            "tapiopon:tapiopon_wild",
+            "tapiopon:tapiopon_calm"
           ]
         },
         "add": {
           "component_groups": [
-            "tapio:tapiopon_tame"
+            "tapiopon:tapiopon_tame"
           ]
         }
       },
       "minecraft:become_angry": {
         "remove": {
           "component_groups": [
-            "tapio:tapiopon_calm"
+            "tapiopon:tapiopon_calm"
           ]
         },
         "add": {
           "component_groups": [
-            "tapio:tapiopon_angry"
+            "tapiopon:tapiopon_angry"
           ]
         }
       },
       "minecraft:on_calm": {
         "remove": {
           "component_groups": [
-            "tapio:tapiopon_angry"
+            "tapiopon:tapiopon_angry"
           ]
         },
         "add": {
           "component_groups": [
-            "tapio:tapiopon_calm"
+            "tapiopon:tapiopon_calm"
           ]
         }
       }

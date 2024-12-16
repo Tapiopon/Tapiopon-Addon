@@ -1,0 +1,15 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:structure_template_feature": {
+        "description": {
+            "identifier": "minecraft:tapiopon_ancientrelic"
+        },
+        "structure_name": "mystructure:tapiopon_ancientrelic",
+        "adjustment_radius": 4,
+        "facing_direction": "random",
+        "constraints": {
+            "grounded": {},
+            "unburied": {}
+        }
+    }
+}

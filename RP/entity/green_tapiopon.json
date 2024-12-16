@@ -2,29 +2,33 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "tapio:green_tapiopon",
-      "materials": { "default": "tapiopon" },
+      "identifier": "tapiopon:green_tapiopon",
+      "materials": {
+        "default": "tapiopon"
+      },
       "textures": {
         "default": "textures/tapiopon/entity/green_tapiopon"
       },
       "geometry": {
         "default": "geometry.tapiopon"
       },
-      "render_controllers": ["controller.render.tapiopon"],
+      "render_controllers": [
+        "controller.render.tapiopon"
+      ],
       "spawn_egg": {
         "texture": "green_tapiopon_egg"
       },
       "scripts": {
         "animate": [
-            "setup",
+          "setup",
           {
             "walk": "query.modified_move_speed"
-            },
-            "look_at_target",
+          },
+          "look_at_target",
           {
             "sit": "query.is_sitting"
-            }
-          ]
+          }
+        ]
       },
       "animations": {
         "setup": "animation.tapiopon.setup",

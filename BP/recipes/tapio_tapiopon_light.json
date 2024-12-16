@@ -2,7 +2,7 @@
   "format_version": "1.16",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "tapio:tapiopon_light"
+      "identifier": "tapiopon:tapiopon_light"
     },
     "tags": [
       "tapiopon_crafting_table"
@@ -17,11 +17,11 @@
         "item": "minecraft:glowstone_dust"
       },
       "B": {
-        "item": "tapio:tapiopon_ingot"
+        "item": "tapiopon:tapiopon_ingot"
       }
     },
     "result": {
-      "item": "tapio:tapiopon_light",
+      "item": "tapiopon:tapiopon_light",
       "count": 1
     },
     "priority": 2

@@ -2,7 +2,7 @@
   "format_version": "1.16",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "tapio:tapiopon_desk"
+      "identifier": "tapiopon:tapiopon_desk"
     },
     "tags": [
       "tapiopon_crafting_table"
@@ -14,14 +14,14 @@
     ],
     "key": {
       "A": {
-        "item": "tapio:tapiopon_ingot"
+        "item": "tapiopon:tapiopon_ingot"
       },
       "B": {
-        "item": "tapio:tapiopon_ball"
+        "item": "tapiopon:white_tapiopon_ball"
       }
     },
     "result": {
-      "item": "tapio:tapiopon_desk",
+      "item": "tapiopon:tapiopon_desk",
       "count": 1
     },
     "priority": 2

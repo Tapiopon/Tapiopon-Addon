@@ -12,6 +12,9 @@
     },
     "tapiopon_crafting_table": {
       "textures": "textures/tapiopon/blocks/tapiopon_crafting_table"
+    },
+    "crystal_tapiopon_block": {
+      "textures": "textures/tapiopon/blocks/crystal_tapiopon_block"
     }
   }
 }

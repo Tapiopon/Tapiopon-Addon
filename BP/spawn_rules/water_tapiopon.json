@@ -2,14 +2,13 @@
   "format_version": "1.8.0",
   "minecraft:spawn_rules": {
     "description": {
-      "identifier": "tapio:water_tapiopon",
+      "identifier": "tapiopon:water_tapiopon",
       "population_control": "animal"
     },
     "conditions": [
       {
         "minecraft:spawns_on_surface": {},
         "minecraft:spawns_underwater": {},
-
         "minecraft:weight": {
           "default": 6
         },
@@ -22,8 +21,16 @@
           "max_size": 3
         },
         "minecraft:biome_filter": [
-          { "test": "has_biome_tag", "operator": "==", "value": "ocean" },
-          { "test": "has_biome_tag", "operator": "!=", "value": "frozen"}
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "ocean"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "!=",
+            "value": "frozen"
+          }
         ]
       }
     ]

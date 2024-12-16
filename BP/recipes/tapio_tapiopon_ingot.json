@@ -2,14 +2,17 @@
   "format_version": "1.12",
   "minecraft:recipe_furnace": {
     "description": {
-      "identifier": "tapio:tapiopon_ingot"
+      "identifier": "tapiopon:tapiopon_ingot"
     },
-    "tags": ["furnace", "blast_furnace"],
+    "tags": [
+      "furnace",
+      "blast_furnace"
+    ],
     "input": {
-      "item": "tapio:tapiopon_ball"
+      "item": "tapiopon:white_tapiopon_ball"
     },
     "output": {
-      "item": "tapio:tapiopon_ingot"
+      "item": "tapiopon:tapiopon_ingot"
     }
   }
 }

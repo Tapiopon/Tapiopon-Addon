@@ -1,0 +1,169 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "tapiopon:crystal_tapiopon",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "tapiopon:crystal_boss_adult": {
+        "minecraft:scale": {
+          "value": 2.0
+        },
+        "minecraft:experience_reward": {
+          "on_death": "50"
+        },
+        "minecraft:attack": {
+          "damage": 15
+        },
+        "minecraft:health": {
+          "value": 150,
+          "max": 150
+        },
+        "minecraft:boss": {
+          "hud_range": 55,
+          "name": "クリスタルたぴおぽん",
+          "should_darken_sky": true
+        },
+        "minecraft:behavior.wither_random_attack_pos_goal": {
+          "priority": 3
+        },
+        "minecraft:behavior.wither_target_highest_damage": {
+          "priority": 1
+        },
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 3,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              "max_dist": 70
+            }
+          ],
+          "must_see": true
+        },
+        "minecraft:behavior.random_stroll": {
+          "priority": 5,
+          "speed_multiplier": 1
+        },
+        "minecraft:behavior.look_at_player": {
+          "priority": 6,
+          "look_distance": 8
+        },
+        "minecraft:fire_immune": {},
+        "minecraft:loot": {
+          "table": "loot_tables/tapio/entity/crystal_tapiopon.json"
+        },
+        "minecraft:damage_sensor": {
+          "triggers": {
+            "on_damage": {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "undead"
+              }
+            },
+            "deals_damage": false
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:type_family": {
+        "family": [
+          "mob",
+          "tapiopon",
+          "crystal_tapiopon"
+        ]
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:movement": {
+        "value": 0.35
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_water": true
+      },
+      "minecraft:movement.basic": {
+        "max_turn": 180.0
+      },
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:can_fly": {},
+      "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 2.0
+      },
+      "minecraft:attack": {
+        "damage": 15
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 3
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 3,
+        "speed_multiplier": 1.5
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 3,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 4,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:shooter": {
+        "def": "minecraft:fireball"
+      },
+      "minecraft:behavior.ranged_attack": {
+        "priority": 1,
+        "attack_radius": 128,
+        "attack_interval": 0.75
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "tapiopon:crystal_boss_adult"
+          ]
+        }
+      },
+      "minecraft:entity_born": {
+        "remove": {},
+        "add": {
+          "component_groups": [
+            "tapiopon:crystal_boss_adult"
+          ]
+        }
+      }
+    }
+  }
+}

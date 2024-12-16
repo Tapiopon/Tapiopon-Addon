@@ -1,9 +1,9 @@
 {
   "format_version": 2,
   "header": {
-    "name": "たぴおぽんアドオン",
-    "description": "beta - R[0, 6, 8]",
-    "version": [0, 6, 8],
+    "name": "たぴおぽんアドオンβ [0, 7, 0]",
+    "description": "beta - R[0, 7, 0]",
+    "version": [0, 7, 0],
     "uuid": "d6e651d5-c87c-4cc9-8d56-e13e5354f7f4",
     "min_engine_version": [1, 21, 21]
   },
@@ -11,31 +11,26 @@
     {
       "type": "resources",
       "description": "resources pack",
-      "version": [0, 6, 8],
+      "version": [0, 7, 0],
       "uuid": "b19d2917-4f53-4a57-97d6-7afb23b916b6"
     }
   ],
   "subpacks": [
     {
-      "folder_name": "high",
-      "name": "高クオリティ 4096px",
+      "folder_name": "normal",
+      "name": "高クオリティ",
       "memory_tier": 1
     },
     {
-      "folder_name": "normal",
-      "name": "中クオリティ 2048px",
-      "memory_tier": 2
-    },
-    {
       "folder_name": "low",
-      "name": "低クオリティ 512px",
-      "memory_tier": 3
+      "name": "低クオリティ",
+      "memory_tier": 2
     }
   ],
   "dependencies": [
     {
       "uuid": "85c1cf5d-fc26-492c-9e0f-5bac1f631c73",
-      "version": [0, 6, 8]
+      "version": [0, 7, 0]
     }
   ],
   "metadata": {

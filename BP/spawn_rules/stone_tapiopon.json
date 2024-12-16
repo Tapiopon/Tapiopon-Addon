@@ -1,0 +1,39 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "tapiopon:stone_tapiopon",
+      "population_control": "animal"
+    },
+    "conditions": {
+      "minecraft:spawns_on_block_filter": {
+        "block_filter": [
+          "minecraft:stone",
+          "minecraft:cobblestone",
+          "minecraft:deepslate"
+        ]
+      },
+      "minecraft:brightness_filter": {
+        "min": 0,
+        "max": 7
+      },
+      "minecraft:weight": {
+        "default": 8
+      },
+      "minecraft:biome_filter": {
+        "test": "surface_height",
+        "operator": "<=",
+        "value": 64
+      },
+      "minecraft:distance_filter": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    "permanent": {},
+    "minecraft:herd": {
+      "min_size": 1,
+      "max_size": 3
+    }
+  }
+}

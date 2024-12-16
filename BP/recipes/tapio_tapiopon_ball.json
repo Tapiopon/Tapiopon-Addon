@@ -2,7 +2,7 @@
   "format_version": "1.16",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "tapio:tapiopon_ball"
+      "identifier": "tapiopon:white_tapiopon_ball"
     },
     "tags": [
       "crafting_table",
@@ -18,7 +18,7 @@
       }
     },
     "result": {
-      "item": "tapio:tapiopon_ball",
+      "item": "tapiopon:white_tapiopon_ball",
       "count": 1
     },
     "priority": 2
