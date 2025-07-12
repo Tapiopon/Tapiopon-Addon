@@ -1,0 +1,50 @@
+{
+    "resource_pack_name": "tapiopon",
+    "texture_data": {
+        "white_tapiopon_egg": {
+            "textures": "textures/tapiopon/item/white_tapiopon_egg"
+        },
+        "black_tapiopon_egg": {
+            "textures": "textures/tapiopon/item/black_tapiopon_egg"
+        },
+        "aqua_tapiopon_egg": {
+            "textures": "textures/tapiopon/item/aqua_tapiopon_egg"
+        },
+        "lava_tapiopon_egg": {
+            "textures": "textures/tapiopon/item/lava_tapiopon_egg"
+        },
+        "lime_tapiopon_egg": {
+            "textures": "textures/tapiopon/item/lime_tapiopon_egg"
+        },
+        "red_tapiopon_egg": {
+            "textures": "textures/tapiopon/item/red_tapiopon_egg"
+        },
+        "yellow_tapiopon_egg": {
+            "textures": "textures/tapiopon/item/yellow_tapiopon_egg"
+        },
+        "white_tapiopon_ball": {
+            "textures": "textures/tapiopon/item/ball/white_tapiopon_ball"
+        },
+        "black_tapiopon_ball": {
+            "textures": "textures/tapiopon/item/ball/black_tapiopon_ball"
+        },
+        "aqua_tapiopon_ball": {
+            "textures": "textures/tapiopon/item/ball/aqua_tapiopon_ball"
+        },
+        "lava_tapiopon_ball": {
+            "textures": "textures/tapiopon/item/ball/lava_tapiopon_ball"
+        },
+        "lime_tapiopon_ball": {
+            "textures": "textures/tapiopon/item/ball/lime_tapiopon_ball"
+        },
+        "red_tapiopon_ball": {
+            "textures": "textures/tapiopon/item/ball/red_tapiopon_ball"
+        },
+        "yellow_tapiopon_ball": {
+            "textures": "textures/tapiopon/item/ball/yellow_tapiopon_ball"
+        },
+        "tapiopon_material_ball": {
+            "textures": "textures/tapiopon/item/ball/material_ball"
+        }
+    }
+}
