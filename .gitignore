@@ -132,7 +132,6 @@ dist
 *.mcaddon
 
 build.js
-liteBuild.js
 replaceWhite.js
 package.json
 package-lock.json
