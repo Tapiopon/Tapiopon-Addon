@@ -26,6 +26,6 @@ entity.tapiopon:lava_tapiopon.name=溶岩たぴおぽん
 item.spawn_egg.entity.tapiopon:lava_tapiopon.name=溶岩たぴおぽんのスポーンエッグ
 item.tapiopon:lava_tapiopon_ball=溶岩たぴおぽんの素材
 
-item.tapiopon:tapiopon_material=たぴおぽんのもと
+item.tapiopon:tapiopon_material=たぴおぽんの素材
 
 tile.tapiopon:tapiopon_crafting_table.name=たぴおぽんの作業台
