@@ -1,0 +1,97 @@
+{
+    "entity_sounds": {
+        "entities": {
+            "tapiopon:white_tapiopon": {
+                "events": {
+                    "ambient": "mob.tapiopon.cry",
+                    "death": "mob.tapiopon.death",
+                    "hurt": "mob.tapiopon.hit",
+                    "angry": "mob.tapiopon.angry"
+                },
+                "pitch": [
+                    0.80,
+                    1.20
+                ],
+                "volume": 1.0
+            },
+            "tapiopon:aqua_tapiopon": {
+                "events": {
+                    "ambient": "mob.tapiopon.cry",
+                    "death": "mob.tapiopon.death",
+                    "hurt": "mob.tapiopon.hit",
+                    "angry": "mob.tapiopon.angry"
+                },
+                "pitch": [
+                    0.80,
+                    1.20
+                ],
+                "volume": 1.0
+            },
+            "tapiopon:black_tapiopon": {
+                "events": {
+                    "ambient": "mob.tapiopon.cry",
+                    "death": "mob.tapiopon.death",
+                    "hurt": "mob.tapiopon.hit",
+                    "angry": "mob.tapiopon.angry"
+                },
+                "pitch": [
+                    0.80,
+                    1.20
+                ],
+                "volume": 1.0
+            },
+            "tapiopon:lava_tapiopon": {
+                "events": {
+                    "ambient": "mob.tapiopon.cry",
+                    "death": "mob.tapiopon.death",
+                    "hurt": "mob.tapiopon.hit",
+                    "angry": "mob.tapiopon.angry"
+                },
+                "pitch": [
+                    0.80,
+                    1.20
+                ],
+                "volume": 1.0
+            },
+            "tapiopon:lime_tapiopon": {
+                "events": {
+                    "ambient": "mob.tapiopon.cry",
+                    "death": "mob.tapiopon.death",
+                    "hurt": "mob.tapiopon.hit",
+                    "angry": "mob.tapiopon.angry"
+                },
+                "pitch": [
+                    0.80,
+                    1.20
+                ],
+                "volume": 1.0
+            },
+            "tapiopon:red_tapiopon": {
+                "events": {
+                    "ambient": "mob.tapiopon.cry",
+                    "death": "mob.tapiopon.death",
+                    "hurt": "mob.tapiopon.hit",
+                    "angry": "mob.tapiopon.angry"
+                },
+                "pitch": [
+                    0.80,
+                    1.20
+                ],
+                "volume": 1.0
+            },
+            "tapiopon:yellow_tapiopon": {
+                "events": {
+                    "ambient": "mob.tapiopon.cry",
+                    "death": "mob.tapiopon.death",
+                    "hurt": "mob.tapiopon.hit",
+                    "angry": "mob.tapiopon.angry"
+                },
+                "pitch": [
+                    0.80,
+                    1.20
+                ],
+                "volume": 1.0
+            }
+        }
+    }
+}
