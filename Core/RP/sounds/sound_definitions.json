@@ -7,7 +7,7 @@
     },
     "mob.tapiopon.death": {
       "category": "neutral",
-      "sounds": ["sounds/tapiopon/death"]
+      "sounds": ["sounds/tapiopon/cry"]
     },
     "mob.tapiopon.hit": {
       "category": "neutral",
