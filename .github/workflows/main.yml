@@ -1,4 +1,4 @@
-name: Build and Notify
+name: Build and Notify v0.1.0
 
 on:
   push:
