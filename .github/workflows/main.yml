@@ -1,0 +1,36 @@
+name: Build and Notify
+
+on:
+  push:
+    branches:
+      - alpha  # 必要に応じて変更
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v3
+
+      - name: Node.js セットアップ
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: 依存パッケージのインストール
+        run: npm install fs-extra archiver
+
+      - name: liteBuild.js の実行
+        run: node liteBuild.js alpha
+
+      - name: Discord に Webhook 通知
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          ZIP_FILE=$(ls tapiopon-addon-lite-*.mcaddon)
+          curl -X POST \
+            -H "Content-Type: multipart/form-data" \
+            -F "payload_json={\"content\": \"✅ 新しいビルドが完了しました！\", \"username\": \"Addon Builder\"}" \
+            -F "file=@$ZIP_FILE" \
+            $DISCORD_WEBHOOK_URL
