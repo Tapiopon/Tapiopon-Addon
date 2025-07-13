@@ -3,7 +3,7 @@ name: Build and Notify
 on:
   push:
     branches:
-      - main  # 必要に応じて変更してください
+      - alpha  # 必要に応じて変更
 
 jobs:
   build:
@@ -22,7 +22,7 @@ jobs:
         run: npm install fs-extra archiver
 
       - name: liteBuild.js の実行
-        run: node liteBuild.js alpha  # ← 'alpha' は必要に応じて変更可能
+        run: node liteBuild.js alpha
 
       - name: Discord に Webhook 通知
         env:
