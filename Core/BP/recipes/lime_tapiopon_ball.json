@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "tapiopon:lime_tapiopon_ball"
+    },
+    "tags": [
+      "tapiopon_crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "tapiopon:tapiopon_material"
+      },
+      {
+        "item": "minecraft:lime_dye"
+      }
+    ],
+    "result": {
+      "item": "tapiopon:lime_tapiopon_ball"
+    }
+  }
+}

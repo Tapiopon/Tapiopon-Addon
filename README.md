@@ -1,156 +1,69 @@
-# Tapiopon-Addon
-不思議な生き物、たぴおぽんが追加されます
+# Tapiopon Addon
+
+このアドオンを導入すると、たぴおぽんという変なモブが追加されます
 
 ## 導入方法
-ホリデークリエイターの特徴をオンにして、たぴおぽんアドオンのビヘイビアパックとリソースパックを導入します。
-![image](https://user-images.githubusercontent.com/101993086/233373206-8089e623-1035-4f30-b13a-f26eb08fa7ac.png)
+リリースからたぴおぽんアドオンのビヘイビアパックとリソースパックを追加してください。
 
 ## 配信や動画に使用する場合について
 以下の注意事項を守ってご自由にご利用ください。
-  - 自作発言はやめてください。
-  - たぴおぽんの音声は想像とは全く違うと思うので配信をする際は一度たぴおぽんアドオンをテストすることをオススメします。
+- たぴおぽんの音声は想像とは全く違うと思うので配信をする際は一度たぴおぽんアドオンをテストすることをオススメします。
 
-## 追加されるもの
-### レシピ
-
-たぴおぽんの素材
-- ジャガイモx4
-
-![ball](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/09885dde-d6b1-4d85-b89c-acdcd45ae26a)
-
-毒付きたぴおぽんの素材
-- たぴおぽんの素材x8
-- クモの目
-
-![image](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/b9c12162-0228-4e0f-8b51-7017222b2ec0)
+## 追加されるモブ
+| 名前                                | 特徴                   | スポーン場所                   | 敵対関係       | 飼いならした後                      |
+| --------------------------------- | -------------------- | ------------------------ | ---------- | ---------------------------- |
+| **水色たぴおぽん**<br>(aqua\_tapiopon)   | 水陸両用で水中活動が得意         | 川、海（水中）                  | 赤たぴおぽんと敵対  | HP: 40 / ATK: 2<br>素材で回復・繁殖可 |
+| **黒たぴおぽん**<br>(black\_tapiopon)   | 足が速い                 | 平原、森、サバンナ、タイガ、草原（明るさ7以下） | 白たぴおぽんと敵対  | HP: 30 / ATK: 2<br>素材で回復・繁殖可 |
+| **溶岩たぴおぽん**<br>(lava\_tapiopon)   | ボス。火炎・溶岩無効。火の玉で攻撃 | ネザー周辺                    | プレイヤーを攻撃   | **飼いならせない**                  |
+| **黄緑たぴおぽん**<br>(lime\_tapiopon)   | 穏やかな性格               | 平原（明るさ7以上）               | 敵対なし       | HP: 40 / ATK: 2<br>素材で回復・繁殖可 |
+| **赤たぴおぽん**<br>(red\_tapiopon)     | 炎・溶岩無効               | ネザー、真紅の森など               | 水色たぴおぽんと敵対 | HP: 40 / ATK: 2<br>素材で回復・繁殖可 |
+| **白たぴおぽん**<br>(white\_tapiopon)   | バランス型                | 平原、森、サバンナなど（明るさ7以上）      | 黒たぴおぽんと敵対  | HP: 40 / ATK: 2<br>素材で回復・繁殖可 |
+| **黄色たぴおぽん**<br>(yellow\_tapiopon) | 穏やかだが、飼うと攻撃的         | 砂漠（明るさ7以上）               | 敵対なし       | HP: 40 / ATK: 3<br>素材で回復・繁殖可 |
 
 
-たぴおぽんの作業台
-- たぴおぽんインゴットx4
+## 追加されるアイテム
 
-![image](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/af8a3f81-5ac9-4560-ad7c-fb49f183cae7)
+### たぴおぽんボール (各種)
+各色のたぴおぽんを倒した際にドロップするアイテムです。食べることで満腹度を4回復します。
+対応する色のたぴおぽんの回復や繁殖に使用できます。
 
-たぴおぽんのデスク
-- たぴおぽんインゴットx7
-- たぴおぽんの素材
+- `aqua_tapiopon_ball`
+- `black_tapiopon_ball`
+- `lava_tapiopon_ball`
+- `lime_tapiopon_ball`
+- `red_tapiopon_ball`
+- `white_tapiopon_ball`
+- `yellow_tapiopon_ball`
 
-![image](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/86c16feb-3618-4aba-8939-4f44261abd9e)
+### たぴおぽんの素 (tapiopon_material)
+クラフトに使用する素材アイテムです。
 
-たぴおぽんライト
-- グロウストーンの粉x8
-- たぴおぽんインゴット
-![image](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/3d16768f-79ff-4681-a8f9-34c76e177328)
+## 追加されるレシピ
 
-たぴおぽんインゴット
-- たぴおぽんの素材
-![image](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/c58506ec-0b16-45ad-aac4-7649ddfc0d2b)
+### たぴおぽんの素 (tapiopon_material)
+- **クラフト方法**: たぴおぽん作業台でジャガイモ9個からクラフトできます。
+  ```
+  A A A
+  A A A
+  A A A
+  A=ジャガイモ
+  ```
 
----
-### モブ
-白たぴおぽん
-- 移動速度: 0.25
-- 野生の場合
-  - 体力: 30
-  - 攻撃力: 1
-- 飼いならした状態
-  - 体力: 40
-  - 攻撃力: 2
+### 各種たぴおぽんボール
+- **クラフト方法**: たぴおぽん作業台で「たぴおぽんの素」と各色の染料をクラフトすることで、対応する色のたぴおぽんボールを作成できます。
+| ボール名       | 素材               |
+| ---------- | ---------------- |
+| 水色たぴおぽんボール | たぴおぽんの素 + 水色の染料  |
+| 黒たぴおぽんボール  | たぴおぽんの素 + 黒色の染料  |
+| 溶岩たぴおぽんボール | たぴおぽんの素 + 溶岩バケツ  |
+| 黄緑たぴおぽんボール | たぴおぽんの素 + 黄緑色の染料 |
+| 赤たぴおぽんボール  | たぴおぽんの素 + 赤色の染料  |
+| 白たぴおぽんボール  | たぴおぽんの素 + 白色の染料  |
+| 黄色たぴおぽんボール | たぴおぽんの素 + 黄色の染料  |
 
-![white](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/f58fcca9-b8a0-419b-90af-ee80abd47c14)
+## 追加されるブロック
 
-黒たぴおぽん
-- 移動速度: 0.42
-- 野生の場合
-  - 体力: 12
-  - 攻撃力: 6
-- 飼いならした状態
-  - 体力: 14
-  - 攻撃力: 8
-
-![black](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/0cbdce79-5664-40dd-be65-078cd5cb46ba)
-
-緑たぴおぽん
-- 移動速度: 0.25
-- 野生の場合
-  - 体力: 30
-  - 攻撃力: 1
-- 飼いならした状態
-  - 体力: 32
-  - 攻撃力: 3
-
-![green](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/d3c40e79-01b4-46a6-a7b4-6d31aaaccdba)
-
-水たぴおぽん
-- 移動速度: 0.25
-- 野生の場合
-  - 体力: 30
-  - 攻撃力: 1
-- 飼いならした状態
-  - 体力: 40
-  - 攻撃力: 2
-
-![water](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/d370d244-ef7f-43ff-ad0b-4bea433eac3d)
-
-炎たぴおぽん
-- 移動速度: 0.25
-- 野生の場合
-  - 体力: 24
-  - 攻撃力: 6
-- 飼いならした状態
-  - 体力: 26
-  - 攻撃力: 6
-
-![fire](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/ac3e37d5-6168-4803-a93b-70b44354687c)
-
-エンダーたぴおぽん
-- 移動速度: 0.35
-- 野生の場合
-  - 体力: 48
-  - 攻撃力: 8
-- 飼いならした状態
-  - 体力: 24
-  - 攻撃力: 4
-
-![ender](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/fa88112b-f8c7-4daf-b3bc-8daff7581faa)
-
-紫たぴおぽん
-- 移動速度: 0.35
-- 野生の場合
-  - 体力: 20
-  - 攻撃力: 2
-- 飼いならした状態
-  - 体力: 20
-  - 攻撃力: 2
-
-![purple](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/19be9f95-228c-4569-b408-76fd885bf3b8)
-
----
-### アイテム
-たぴおぽんの素材
-- たぴおぽんを懐かせることができます
-
-![ball](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/d65ca31a-0023-484e-8286-6bc48a69ebf3)
-
-毒付きたぴおぽんの素材
-- 投げてたぴおぽんにダメージを与えることができます
-
-![anti](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/e702f90f-354f-49aa-a84e-f5b71f42d479)
-
-たぴおぽんインゴット
-- たぴおぽんの作業台を作ることができます
-
-![ingot](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/02866c06-63b2-44bb-9c1b-e2034cd61261)
-
----
-### ブロック
-たぴおぽんライト
-
-![image](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/8a808d4a-6071-4702-b5aa-da52bc82dc95)
-
-たぴおぽんの作業台
-
-![image](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/7b6376c7-413d-483e-b8bf-c7056c53f389)
-
-たぴおぽんのデスク
-
-![image](https://github.com/Tapiopon/Tapiopon-Addon/assets/101993086/30ec091f-e556-49a7-bb55-bf1dde5082d8)
+### たぴおぽん作業台 (tapiopon_crafting_table)
+- **特徴**: たぴおぽん専用の作業台です。たぴおぽんの素材やボールのクラフトに使用します。
+- **破壊時間**: 1.0秒
+- **爆破耐性**: 15

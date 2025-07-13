@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "tapiopon:lava_tapiopon_spawn_egg"
+    },
+    "tags": [
+      "tapiopon_crafting_table"
+    ],
+    "pattern": [
+      "###",
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "tapiopon:lava_tapiopon_ball"
+      }
+    },
+    "result": {
+      "item": "tapiopon:lava_tapiopon_spawn_egg"
+    }
+  }
+}
